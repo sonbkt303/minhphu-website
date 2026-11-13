@@ -31,6 +31,7 @@ const P = {
   g4: "photo-1568605114967-8130f3a36994",
   g5: "photo-1600596542815-ffad4c1539a9",
   g6: "photo-1600566753190-17f0baa2a6c3",
+  g7: "photo-1600585154340-be6161a56a0c",
   tl: "photo-1503387762-592deb58ef4e",
   cta: "photo-1448630360428-65456885c650",
   n1: "photo-1554995207-c18c203602cb",
@@ -66,6 +67,7 @@ const gallery = [
   [P.g4, "Nhà thấp tầng", "g-d"],
   [P.g5, "Nội thất tinh tế", "g-e"],
   [P.g6, "Căn hộ mẫu", "g-f"],
+  [P.g7, "Ngoại thất xanh", "g-g"],
 ];
 
 const milestones = [
