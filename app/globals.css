@@ -274,6 +274,8 @@ h2{background:linear-gradient(100deg,var(--navy) 40%,var(--navy-light));-webkit-
 @keyframes slideb{from{opacity:0;transform:translateX(-80px) rotateY(14deg) scale(.92)}to{opacity:1;transform:none}}
 @keyframes lbshine{to{transform:translateX(120%)}}
 @media(max-width:700px){.lb-stage{padding:0 .6rem}.lb-nav{top:auto;bottom:6.6rem;margin:0;width:40px;height:40px}.lb-thumbs button{width:70px;height:48px}.pcard-view{opacity:1;transform:none}}
+.mosaic figure,.mosaic img,.pcard img,.news img,.ico,.ico svg,.fcard,.logo,a,button,[role="button"],.lb-thumbs button,.lb-thumbs img{cursor:pointer}
+.lb-stage img{cursor:grab}
 @media(prefers-reduced-motion:reduce){
   .lb,.lb-slide,.lb-shine{animation:none}
   .lb-shine{display:none}
