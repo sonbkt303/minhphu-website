@@ -1,33 +1,41 @@
-export function LogoMark({ size = 44 }: { size?: number }) {
+// Huy hiệu tròn cổ điển: Minh = mặt trời mọc, Phú = vòng lúa/nguyệt quế, Hưng = ba bậc đi lên.
+const LEAVES: [number, number, number][] = [
+  [17.6, 39.8, -22], [13.8, 37.6, -37], [10.6, 34.5, -52], [8.4, 30.6, -67], [7.2, 26.4, -82], [7.1, 21.9, -97],
+  [30.4, 39.8, 22], [34.2, 37.6, 37], [37.4, 34.5, 52], [39.6, 30.6, 67], [40.8, 26.4, 82], [40.9, 21.9, 97],
+];
+
+export function LogoMark({ size = 48 }: { size?: number }) {
   return (
     <svg className="logo-mark" width={size} height={size} viewBox="0 0 48 48" fill="none" aria-hidden="true">
       <defs>
-        <linearGradient id="mph-bg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+        <radialGradient id="mph-bg" cx="50%" cy="35%" r="75%">
           <stop stopColor="#1E4D7B" />
-          <stop offset="1" stopColor="#0A1829" />
-        </linearGradient>
-        <linearGradient id="mph-sun" x1="24" y1="8" x2="24" y2="32" gradientUnits="userSpaceOnUse">
+          <stop offset="1" stopColor="#081423" />
+        </radialGradient>
+        <linearGradient id="mph-gold" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
           <stop stopColor="#FFE9A8" />
-          <stop offset="1" stopColor="#C8982A" />
+          <stop offset=".5" stopColor="#D9A93A" />
+          <stop offset="1" stopColor="#9C7120" />
         </linearGradient>
-        <linearGradient id="mph-tower" x1="0" y1="14" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+        <linearGradient id="mph-step" x1="0" y1="22" x2="0" y2="36" gradientUnits="userSpaceOnUse">
           <stop stopColor="#FFFFFF" />
           <stop offset="1" stopColor="#B9CBE0" />
         </linearGradient>
-        <clipPath id="mph-clip"><rect width="48" height="48" rx="13" /></clipPath>
       </defs>
-      <rect width="48" height="48" rx="13" fill="url(#mph-bg)" />
-      <g clipPath="url(#mph-clip)">
-        <g className="logo-rays" stroke="#E4B84A" strokeWidth="1.4" strokeLinecap="round" opacity=".55">
-          <path d="M24 3v4M10 8l2.6 3M38 8l-2.6 3M3 21h4M41 21h4" />
-        </g>
-        <circle className="logo-sun" cx="24" cy="21" r="10.5" fill="url(#mph-sun)" />
-        <path d="M9 40V30a1.5 1.5 0 0 1 1.5-1.5h5A1.5 1.5 0 0 1 17 30v10z" fill="url(#mph-tower)" />
-        <path d="M19.5 40V23a1.5 1.5 0 0 1 1.5-1.5h6a1.5 1.5 0 0 1 1.5 1.5v17z" fill="url(#mph-tower)" />
-        <path d="M31 40V16.5A1.5 1.5 0 0 1 32.5 15h5a1.5 1.5 0 0 1 1.5 1.5V40z" fill="url(#mph-tower)" />
-        <path d="M22.5 26h3M22.5 30h3M22.5 34h3M34 20h1.5M34 24h1.5M34 28h1.5M34 32h1.5" stroke="#1E4D7B" strokeWidth="1.2" strokeLinecap="round" opacity=".55" />
-        <path d="M6 41h36" stroke="#E4B84A" strokeWidth="2" strokeLinecap="round" />
+      <circle cx="24" cy="24" r="23" fill="url(#mph-bg)" />
+      <circle cx="24" cy="24" r="21.6" stroke="url(#mph-gold)" strokeWidth=".9" />
+      <circle cx="24" cy="24" r="19.8" stroke="#E4B84A" strokeWidth=".4" opacity=".6" />
+      <g fill="url(#mph-gold)">
+        {LEAVES.map(([x, y, r], i) => (
+          <ellipse key={i} cx={x} cy={y} rx="3.1" ry="1.4" transform={`rotate(${r} ${x} ${y})`} />
+        ))}
       </g>
+      <g className="logo-rays" stroke="#E4B84A" strokeWidth="1" strokeLinecap="round" opacity=".8">
+        <path d="M24 10v2.6M16 13.2l1.8 1.8M32 13.2l-1.8 1.8M12.5 21h2.6M32.9 21h2.6" />
+      </g>
+      <circle className="logo-sun" cx="24" cy="21" r="6.2" fill="url(#mph-gold)" />
+      <path d="M15 36V31h5.2v5zM21 36V27h5.2v9zM27 36V23h5.2v13z" fill="url(#mph-step)" />
+      <path d="M13 37h22" stroke="url(#mph-gold)" strokeWidth="1.4" strokeLinecap="round" />
     </svg>
   );
 }
@@ -38,7 +46,7 @@ export default function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
       <LogoMark />
       <span className="brand-text">
         <b>Minh Phú Hưng</b>
-        <small>Land · Real Estate</small>
+        <small>Minh bạch · Phú quý · Hưng thịnh</small>
       </span>
     </span>
   );
