@@ -215,6 +215,9 @@ form .btn{justify-content:center}
 .mosaic figure img{will-change:transform}
 .mosaic figure::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.25) 50%,transparent 60%);transform:translateX(-120%);transition:transform .9s var(--ease)}
 .mosaic figure:hover::after{transform:translateX(120%)}
+.mosaic figure{cursor:zoom-in}
+.zoom-ico{position:absolute;top:.9rem;right:.9rem;z-index:3;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#1a1305;background:linear-gradient(120deg,#ffe9a8,#e4b84a);box-shadow:0 6px 20px rgba(200,152,42,.45);opacity:0;transform:scale(.6) rotate(-45deg);transition:.45s var(--ease)}
+.mosaic figure:hover .zoom-ico,.mosaic figure:focus-visible .zoom-ico{opacity:1;transform:none}
 .fcard .ico{transition:transform .6s var(--ease),box-shadow .6s}
 .fcard:hover .ico{transform:rotateY(180deg) scale(1.1);box-shadow:0 10px 30px rgba(200,152,42,.4)}
 .ncard img{transition:transform 1s var(--ease)}

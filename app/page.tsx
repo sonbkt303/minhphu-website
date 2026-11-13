@@ -3,6 +3,7 @@ import Effects from "@/components/Effects";
 import ContactForm from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
+import GalleryMosaic from "@/components/GalleryMosaic";
 import ProjectCards, { type Project } from "@/components/ProjectCards";
 
 const profile: [string, React.ReactNode][] = [
@@ -180,14 +181,7 @@ export default function Home() {
               <h2>Không gian sống đẳng cấp</h2>
               <p className="muted">Từng chi tiết được chăm chút để mỗi gia đình thêm an yên</p>
             </div>
-            <div className="mosaic">
-              {gallery.map(([id, cap, cls]) => (
-                <figure className={`reveal ${cls}`} key={cls}>
-                  <img src={img(id, 900)} alt={cap} loading="lazy" />
-                  <figcaption>{cap}</figcaption>
-                </figure>
-              ))}
-            </div>
+            <GalleryMosaic items={gallery as [string, string, string][]} />
           </div>
         </section>
 
