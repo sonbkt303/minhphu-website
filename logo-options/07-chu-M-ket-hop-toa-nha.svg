@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient>
+  </defs>
+  <rect width="240" height="300" fill="#FFFFFF"/>
+  <path d="M48 180V80h22l50 60 50-60h22v100h-22v-56l-50 58-50-58v56z" fill="#0C1E35"/>
+  <circle cx="120" cy="62" r="20" fill="url(#g)"/>
+  <path d="M120 28v8M92 40l6 6M148 40l-6 6" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M48 196h144" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+  <text x="120" y="244" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" letter-spacing="6" fill="#B8862A">LAND</text>
+</svg>

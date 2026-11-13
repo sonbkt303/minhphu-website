@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient></defs>
+  <rect width="240" height="300" fill="#FFFFFF"/>
+  <path d="M120 24L206 94V192H34V94Z" fill="#0C1E35"/>
+  <circle cx="98" cy="108" r="26" fill="url(#g)"/>
+  <circle cx="98" cy="108" r="10" fill="#0C1E35"/>
+  <path d="M124 108h60M158 108v22M176 108v16" stroke="url(#g)" stroke-width="10" stroke-linecap="butt"/>
+  <path d="M60 192v-30h120v30" fill="none" stroke="url(#g)" stroke-width="0"/>
+  <path d="M34 94L120 24L206 94" fill="none" stroke="url(#g)" stroke-width="6" stroke-linejoin="round"/>
+  <text x="120" y="236" text-anchor="middle" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="8" letter-spacing="1.5" fill="#B8862A">CHÌA KHÓA TRAO TAY · AN CƯ LẠC NGHIỆP</text>
+</svg>

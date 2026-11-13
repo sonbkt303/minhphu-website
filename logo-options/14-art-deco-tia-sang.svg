@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient></defs>
+  <rect width="240" height="300" fill="#0B0B0F"/>
+  <path d="M120 200L30 200A90 90 0 0 1 210 200Z" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <g stroke="url(#g)" stroke-width="3" stroke-linecap="round">
+    <path d="M120 200L120 116M120 200L56 136M120 200L184 136M120 200L38 168M120 200L202 168"/>
+  </g>
+  <path d="M120 200L90 200A30 30 0 0 1 150 200Z" fill="url(#g)"/>
+  <path d="M60 200h120M48 212h144M36 224h168" stroke="url(#g)" stroke-width="2"/>
+  <circle cx="120" cy="82" r="5" fill="url(#g)"/>
+  <text x="120" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="700" letter-spacing="1" fill="#FFE9A8">MINH PHÚ HƯNG</text>
+  <text x="120" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="6" fill="#D9A93A">L A N D</text>
+</svg>

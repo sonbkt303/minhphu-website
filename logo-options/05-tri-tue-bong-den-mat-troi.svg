@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop stop-color="#1E4D7B"/><stop offset="1" stop-color="#081423"/></radialGradient>
+  </defs>
+  <rect width="240" height="300" fill="#FBF7EC"/>
+  <circle cx="120" cy="115" r="95" fill="url(#bg)"/>
+  <g stroke="url(#g)" stroke-width="4" stroke-linecap="round"><path d="M120 28v14M62 52l10 10M178 52l-10 10M38 112h14M188 112h14"/></g>
+  <path d="M120 58c-28 0-48 20-48 46 0 18 9 28 17 38 4 5 6 9 6 14h50c0-5 2-9 6-14 8-10 17-20 17-38 0-26-20-46-48-46z" fill="url(#g)"/>
+  <path d="M104 156h32M106 166h28" stroke="#9C7120" stroke-width="5" stroke-linecap="round"/>
+  <path d="M120 156V118M120 132l-14-12M120 126l14-10" stroke="#081423" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="120" cy="104" r="7" fill="#081423"/><circle cx="120" cy="104" r="2.6" fill="#FFE9A8"/>
+  <path d="M82 190h76" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+  <text x="120" y="248" text-anchor="middle" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="270" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#9C7120">SÁNG SUỐT · TRÍ TUỆ · HƯNG THỊNH</text>
+</svg>

@@ -4,7 +4,7 @@ Logo là **huy hiệu tròn cổ điển**, nền xanh navy, viền vàng đồn
 
 | Chữ | Biểu tượng trong logo | Ý nghĩa |
 |---|---|---|
-| **Minh** (明) | Mặt trời vàng với các tia sáng ở trung tâm phía trên | Sáng, minh bạch, rõ ràng trong pháp lý và cam kết với khách hàng. Mặt trời "mọc" từ phía sau các bậc thang, gợi khởi đầu mới. |
+| **Minh** (明) | Mặt trời vàng với các tia sáng ở trung tâm phía trên, bên trong có vòng "con ngươi" | **Ánh sáng**: minh bạch, rõ ràng trong pháp lý và cam kết. **Thông minh, trí tuệ, sáng suốt**: mặt trời cũng là con mắt tinh anh, nhìn xa trông rộng, quyết định đúng đắn. Mặt trời "mọc" từ phía sau các bậc thang, gợi khởi đầu mới. |
 | **Phú** (富) | Hai nhánh lúa/nguyệt quế vàng ôm hai bên | Trù phú, no đủ, thịnh vượng. Vòng nguyệt quế còn tượng trưng cho uy tín và thành tựu. |
 | **Hưng** (興) | Ba bậc thang trắng cao dần từ trái sang phải | Hưng thịnh, đi lên từng bước. Cũng là hình ba khối nhà cao dần, nhắc đến lĩnh vực bất động sản. |
 
@@ -14,6 +14,9 @@ Logo là **huy hiệu tròn cổ điển**, nền xanh navy, viền vàng đồn
 - **Màu vàng `#FFE9A8 → #D9A93A → #9C7120`**: giá trị, thịnh vượng, sang trọng.
 - **Đường kẻ vàng dưới chân bậc thang**: nền móng, pháp lý vững chắc.
 - **Khẩu hiệu đi kèm**: *Minh bạch · Phú quý · Hưng thịnh*.
+
+## Phương án khác
+Xem thư mục `logo-options/` (7 phong cách, kèm giải thích trong `logo-options/README.md`).
 
 ## Tệp liên quan
 - Component: `components/Logo.tsx` (dùng ở thanh điều hướng và footer)

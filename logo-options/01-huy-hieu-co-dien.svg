@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="75%"><stop stop-color="#1E4D7B"/><stop offset="1" stop-color="#081423"/></radialGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="240" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient>
+  </defs>
+  <rect width="240" height="300" fill="#FBF7EC"/>
+  <g transform="translate(20 10) scale(4.17)">
+    <circle cx="24" cy="24" r="23" fill="url(#bg)"/>
+    <circle cx="24" cy="24" r="21.6" stroke="url(#g)" stroke-width=".9" fill="none"/>
+    <circle cx="24" cy="24" r="19.8" stroke="#E4B84A" stroke-width=".4" opacity=".6" fill="none"/>
+    <g fill="url(#g)">
+      <ellipse cx="17.6" cy="39.8" rx="3.1" ry="1.4" transform="rotate(-22 17.6 39.8)"/><ellipse cx="13.8" cy="37.6" rx="3.1" ry="1.4" transform="rotate(-37 13.8 37.6)"/><ellipse cx="10.6" cy="34.5" rx="3.1" ry="1.4" transform="rotate(-52 10.6 34.5)"/><ellipse cx="8.4" cy="30.6" rx="3.1" ry="1.4" transform="rotate(-67 8.4 30.6)"/><ellipse cx="7.2" cy="26.4" rx="3.1" ry="1.4" transform="rotate(-82 7.2 26.4)"/>
+      <ellipse cx="30.4" cy="39.8" rx="3.1" ry="1.4" transform="rotate(22 30.4 39.8)"/><ellipse cx="34.2" cy="37.6" rx="3.1" ry="1.4" transform="rotate(37 34.2 37.6)"/><ellipse cx="37.4" cy="34.5" rx="3.1" ry="1.4" transform="rotate(52 37.4 34.5)"/><ellipse cx="39.6" cy="30.6" rx="3.1" ry="1.4" transform="rotate(67 39.6 30.6)"/><ellipse cx="40.8" cy="26.4" rx="3.1" ry="1.4" transform="rotate(82 40.8 26.4)"/>
+    </g>
+    <g stroke="#E4B84A" stroke-width="1" stroke-linecap="round" opacity=".8"><path d="M24 10v2.6M16 13.2l1.8 1.8M32 13.2l-1.8 1.8M12.5 21h2.6M32.9 21h2.6"/></g>
+    <circle cx="24" cy="21" r="6.2" fill="url(#g)"/>
+    <circle cx="24" cy="21" r="3.2" fill="none" stroke="#081423" stroke-width=".6" opacity=".55"/>
+    <circle cx="24" cy="21" r="1.2" fill="#081423" opacity=".55"/>
+    <path d="M15 36V31h5.2v5zM21 36V27h5.2v9zM27 36V23h5.2v13z" fill="#fff"/>
+    <path d="M13 37h22" stroke="url(#g)" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <text x="120" y="268" text-anchor="middle" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="288" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#9C7120">MINH BẠCH · PHÚ QUÝ · HƯNG THỊNH</text>
+</svg>

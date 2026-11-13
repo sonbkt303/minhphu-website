@@ -34,6 +34,8 @@ export function LogoMark({ size = 48 }: { size?: number }) {
         <path d="M24 10v2.6M16 13.2l1.8 1.8M32 13.2l-1.8 1.8M12.5 21h2.6M32.9 21h2.6" />
       </g>
       <circle className="logo-sun" cx="24" cy="21" r="6.2" fill="url(#mph-gold)" />
+      <circle cx="24" cy="21" r="3.2" stroke="#081423" strokeWidth=".6" opacity=".55" />
+      <circle cx="24" cy="21" r="1.2" fill="#081423" opacity=".55" />
       <path d="M15 36V31h5.2v5zM21 36V27h5.2v9zM27 36V23h5.2v13z" fill="url(#mph-step)" />
       <path d="M13 37h22" stroke="url(#mph-gold)" strokeWidth="1.4" strokeLinecap="round" />
     </svg>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logo options – Minh Phú Hưng Land</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Georgia,serif;background:#fbf7ec;color:#0c1e35;margin:0;padding:2rem}
+h1{text-align:center;margin-bottom:.3rem}
+.sub{text-align:center;color:#7a6a4a;margin:0 0 1rem}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.4rem;max-width:1280px;margin:2rem auto}
+figure{margin:0;position:relative;overflow:hidden;background:#fff;border-radius:14px;padding:1rem;box-shadow:0 6px 24px rgba(12,30,53,.1);text-align:center;cursor:pointer;transition:transform .35s,box-shadow .35s}
+figure:hover,figure:focus-visible{transform:translateY(-6px);box-shadow:0 18px 40px rgba(12,30,53,.22);outline:none}
+img{width:100%;height:auto;display:block;transition:transform .5s}
+figure:hover img{transform:scale(1.04)}
+figcaption{font-weight:700;margin-top:.5rem}
+.info{position:absolute;inset:0;padding:1.1rem 1.1rem;background:linear-gradient(160deg,rgba(12,30,53,.97),rgba(8,20,35,.98));color:#f3ead2;text-align:left;overflow-y:auto;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .35s,transform .35s}
+figure:hover .info,figure:focus-visible .info,figure.open .info{opacity:1;transform:none}
+.info h3{margin:0 0 .6rem;font-size:1.05rem;color:#ffe9a8;border-bottom:1px solid rgba(228,184,74,.4);padding-bottom:.5rem}
+.info h4{margin:.8rem 0 .2rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#e4b84a}
+.info p{margin:0;font-size:.84rem;line-height:1.55}
+.info .fit{margin-top:.8rem;font-size:.8rem;color:#bcae88;font-style:italic}
+</style></head><body>
+<h1>Phương án logo – Minh Phú Hưng Land</h1>
+<p class="sub">Rê chuột (hoặc chạm trên điện thoại) vào từng logo để xem ý tưởng thiết kế và ý nghĩa</p>
+<div class="g" id="g"></div>
+<script>
+const L = [
+["01-huy-hieu-co-dien","01 · Huy hiệu cổ điển (đang dùng)","Huy hiệu tròn trang trọng: nền navy, viền vàng đồng kép, mặt trời ở trên, ba bậc thang ở giữa, vòng nguyệt quế ôm hai bên.","Minh: mặt trời là ánh sáng minh bạch, đồng thời vòng \"con ngươi\" bên trong là con mắt sáng suốt, trí tuệ. Phú: vòng lúa/nguyệt quế là no đủ, thành tựu. Hưng: ba bậc đi lên và cũng là ba khối nhà cao dần.","Truyền thống, đáng tin, hợp dự án nhà ở Công an."],
+["02-monogram-khien","02 · Monogram khiên","Chữ MPH serif đậm đặt trong khiên navy viền vàng; ngôi sao nhỏ phía trên, đường kẻ vàng ngăn chữ LAND.","Khiên là bảo vệ, vững chãi, gần với hình ảnh lực lượng Công an. Ngôi sao là dẫn đường, sáng suốt. Chữ MPH tạo nhận diện nhanh, như một con dấu uy tín.","Uy quyền, vững chãi; dễ làm con dấu, bảng hiệu mặt tiền."],
+["03-toi-gian-net-mong","03 · Tối giản nét mảnh","Chỉ dùng nét vẽ mảnh một màu navy: vòng tròn, ba tòa nhà cao dần, mặt trời vàng nhỏ ở góc.","Mặt trời nhỏ trên đỉnh là ánh sáng và trí tuệ soi đường; ba tòa nhà là hưng thịnh đi lên; vòng tròn là sự trọn vẹn. Ít chi tiết thể hiện sự tinh gọn, minh bạch.","Tinh tế, cao cấp; hợp in ấn, bảng hiệu sang trọng."],
+["04-hien-dai-phang","04 · Hiện đại phẳng","Ô vuông bo góc gradient xanh, ba khối nhà trắng và một hình tròn vàng, thiết kế phẳng không chi tiết thừa.","Hình tròn vàng là ánh sáng và trí tuệ; ba khối trắng cao dần là các bước đi lên vững chắc. Bo góc tạo cảm giác thân thiện, gần gũi.","Dễ đọc ở kích thước nhỏ: app icon, avatar mạng xã hội."],
+["05-tri-tue-bong-den-mat-troi","05 · Trí tuệ – bóng đèn mặt trời","Bóng đèn vàng nằm trong vòng tròn navy tỏa tia nắng; bên trong bóng đèn có con mắt và nhánh sáng.","Bóng đèn là ý tưởng, trí tuệ; mặt trời là ánh sáng và sự minh bạch; con mắt là sự sáng suốt. Ghép lại nói lên chữ \"Minh\" theo nghĩa thông minh, sáng suốt.","Nhấn mạnh trí tuệ, sáng tạo, tầm nhìn; nổi bật ý nghĩa của chữ Minh."],
+["06-an-trien-han-tu","06 · Ấn triện Hán tự","Con dấu vuông đỏ, ba chữ Hán 明 富 興 xếp theo thế kiềng, viền trong mảnh theo phong cách ấn triện.","明 vừa là sáng vừa là thông minh, 富 là giàu có, 興 là hưng thịnh. Con dấu đỏ tượng trưng cho sự xác nhận, uy tín và truyền thống Á Đông.","Truyền thống, văn hóa, phong thủy; hợp thiệp, ấn phẩm, con dấu."],
+["07-chu-M-ket-hop-toa-nha","07 · Chữ M kết hợp tòa nhà","Chữ M khối đậm có hai nét thẳng cao như tòa nhà; mặt trời vàng nằm ngay trên khe chữ M.","M là Minh và cũng là hai tòa nhà đứng cạnh nhau. Mặt trời trên đỉnh là ánh sáng, tầm nhìn sáng suốt dẫn đường cho dự án.","Mạnh mẽ, hiện đại, nhận diện thương hiệu bất động sản rõ ràng."],
+["08-con-mat-thong-thai-mai-nha","08 · Con mắt thông thái + mái nhà","Con mắt hạnh nhân viền vàng trên nền navy, tròng mắt là mặt trời vàng, mái nhà chevron nằm phía trên.","Con mắt là trí tuệ nhìn thấu, sáng suốt; tròng mắt mặt trời là ánh sáng minh bạch; mái nhà là tổ ấm, an cư. Ý: nhìn xa để dựng nên tổ ấm bền vững.","Ấn tượng, dễ nhớ, thể hiện rõ nghĩa trí tuệ của chữ Minh."],
+["09-hoa-sen-mat-troi","09 · Hoa sen & mặt trời","Hoa sen hồng nở dưới mặt trời vàng tỏa tia, một đường xanh lá bên dưới như mặt nước.","Sen thanh cao, thuần khiết, gắn với trí tuệ và đức hạnh người Việt; mặt trời là ánh sáng và sự thịnh vượng. Sen vươn lên từ bùn thể hiện sự vươn lên bền bỉ.","Mềm mại, nhân văn; hợp khu sinh thái và truyền thông cộng đồng."],
+["10-trong-dong-dong-son","10 · Trống đồng Đông Sơn","Các vòng tròn đồng tâm, tia nhọn tỏa ra kiểu mặt trống đồng, màu đồng cổ; ngôi sao sáng ở trung tâm.","Mặt trống đồng có ngôi sao ở giữa tỏa ra các tia, là biểu tượng ánh sáng (Minh) của người Việt cổ. Màu đồng là giá trị bền vững, hồn dân tộc.","Gần gũi văn hóa Việt, độc đáo; hợp ấn phẩm văn hóa, sự kiện."],
+["11-chia-khoa-ngoi-nha","11 · Chìa khóa ngôi nhà","Ngôi nhà navy dạng hình ngũ giác, bên trong là chiếc chìa khóa vàng có đầu tròn như mặt trời.","Chìa khóa là trao nhà, trao niềm tin; đầu chìa khóa là mặt trời mang ánh sáng và sự sáng suốt khi chọn nơi an cư. Mái nhà nhấn mạnh lĩnh vực bất động sản.","Dễ hiểu ngay lĩnh vực; thân thiện với người mua nhà."],
+["12-khoi-isometric-3d","12 · Khối isometric 3D","Các khối lập phương xếp chồng theo phép chiếu isometric, ba sắc xanh, quả cầu vàng nằm phía trên.","Các khối là tòa nhà và nền móng vững chắc, xếp chồng là sự phát triển từng bước. Quả cầu vàng là mặt trời, tầm nhìn dẫn đường.","Công nghệ, hiện đại, trẻ trung; hợp banner, thuyết trình dự án."],
+["13-binh-minh-duong-chan-troi","13 · Bình minh đường chân trời","Mặt trời cam vàng mọc phía sau hàng tòa nhà, trong vòng tròn navy viền vàng, có tia sáng tỏa ra.","Bình minh là ánh sáng khởi đầu mới (Minh), đường chân trời là khu đô thị đang hình thành. Thể hiện hy vọng và tầm nhìn dài hạn.","Giàu hình ảnh, truyền cảm hứng; hợp quảng bá dự án đô thị."],
+["14-art-deco-tia-sang","14 · Art Deco tia sáng","Nửa mặt trời tỏa các tia vàng kiểu quạt trên nền đen, đường kẻ song song bên dưới như bậc thang.","Phong cách Art Deco của thập niên 1920 gắn với kiến trúc đẳng cấp. Mặt trời mọc là Minh, các tia là trí tuệ lan tỏa, các bậc thang là đi lên.","Sang trọng, đẳng cấp; hợp phân khúc cao cấp, biệt thự."],
+["15-luc-giac-to-am","15 · Lục giác tổ ấm","Lục giác navy viền vàng mảnh, ngôi nhà nét trắng ở giữa, mặt trời vàng có tâm ở phía trên.","Lục giác là cấu trúc bền vững, như tổ ong, như khối xây; ngôi nhà là tổ ấm; mặt trời có tâm là con mắt sáng suốt canh giữ an cư.","Cân bằng hiện đại và truyền thống; dễ dùng làm icon."],
+["16-cong-vom-anh-sang","16 · Cổng vòm ánh sáng","Cổng vòm navy viền vàng, lối đi sáng bên trong có mặt trời vàng, nền móng vàng phía dưới.","Cổng làng/cổng thành là biểu tượng của sự uy tín, an toàn. Mặt trời sau cổng là tương lai sáng suốt đang chờ: bước qua cổng là bước vào cuộc sống mới.","Trang nghiêm, giàu chiều sâu; hợp thương hiệu chủ đầu tư."],
+["17-cach-dieu-M-mat-troi-hien-dai","17 · Cách điệu M – mặt trời (hiện đại)","Chữ M hai nửa khác sắc (navy và xanh điện) như hai tấm gập; mặt trời vàng có con ngươi nằm trong khe chữ V, vệt vàng bên dưới làm nền.","Hai nửa M là hai tòa nhà vươn lên; khe chữ V ôm lấy mặt trời, Minh vừa là ánh sáng vừa là con mắt sáng suốt dẫn lối. Vệt vàng là nền móng vững chắc.","Hiện đại, mạnh mẽ; dùng tốt cho web, app, bảng hiệu."]
+];
+const g=document.getElementById('g');
+for(const [f,t,idea,mean,fit] of L){
+  const fig=document.createElement('figure');fig.tabIndex=0;
+  fig.innerHTML=`<img src="${f}.svg" alt="${t}"><figcaption>${t}</figcaption><div class="info"><h3>${t}</h3><h4>Ý tưởng thiết kế</h4><p>${idea}</p><h4>Ý nghĩa</h4><p>${mean}</p><p class="fit">Phù hợp: ${fit}</p></div>`;
+  fig.onclick=()=>fig.classList.toggle('open');
+  g.appendChild(fig);
+}
+</script>
+</body></html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient></defs>
+  <rect width="240" height="300" fill="#FBF7EC"/>
+  <path d="M30 200V100C30 50 70 22 120 22C170 22 210 50 210 100V200Z" fill="#0C1E35"/>
+  <path d="M44 200V102C44 60 76 36 120 36C164 36 196 60 196 102V200Z" fill="none" stroke="url(#g)" stroke-width="2"/>
+  <path d="M70 200V112C70 86 90 70 120 70C150 70 170 86 170 112V200Z" fill="#FBF7EC"/>
+  <circle cx="120" cy="116" r="20" fill="url(#g)"/>
+  <circle cx="120" cy="116" r="8" fill="#0C1E35"/>
+  <g stroke="url(#g)" stroke-width="3" stroke-linecap="round"><path d="M120 82v8M92 94l5 5M148 94l-5 5M86 116h8M146 116h8"/></g>
+  <path d="M120 140v60" stroke="url(#g)" stroke-width="3"/>
+  <path d="M20 200h200" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+  <text x="120" y="244" text-anchor="middle" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="266" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="3" fill="#9C7120">CỔNG VÀO TƯƠNG LAI SÁNG SUỐT</text>
+</svg>

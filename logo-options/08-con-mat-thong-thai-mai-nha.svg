@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset=".5" stop-color="#D9A93A"/><stop offset="1" stop-color="#9C7120"/></linearGradient></defs>
+  <rect width="240" height="300" fill="#0C1E35"/>
+  <path d="M30 150C60 100 180 100 210 150C180 200 60 200 30 150Z" fill="none" stroke="url(#g)" stroke-width="5"/>
+  <circle cx="120" cy="150" r="30" fill="url(#g)"/>
+  <circle cx="120" cy="150" r="14" fill="#0C1E35"/>
+  <circle cx="128" cy="142" r="5" fill="#FFE9A8"/>
+  <path d="M80 82L120 52L160 82" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="url(#g)" stroke-width="3" stroke-linecap="round"><path d="M120 66v8M100 96l4 5M140 96l-4 5"/></g>
+  <text x="120" y="244" text-anchor="middle" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#FFE9A8">MINH PHÚ HƯNG</text>
+  <text x="120" y="266" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="3" fill="#D9A93A">MẮT SÁNG · TRÍ TUỆ · TỔ ẤM</text>
+</svg>

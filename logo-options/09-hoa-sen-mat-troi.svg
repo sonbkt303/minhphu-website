@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F6B6C8"/><stop offset="1" stop-color="#D9577F"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset="1" stop-color="#C98F25"/></linearGradient>
+  </defs>
+  <rect width="240" height="300" fill="#FFF9F2"/>
+  <circle cx="120" cy="110" r="46" fill="url(#g)"/>
+  <g stroke="#C98F25" stroke-width="3" stroke-linecap="round"><path d="M120 40v12M70 62l8 8M170 62l-8 8M52 108h12M176 108h12"/></g>
+  <path d="M120 188C100 160 100 120 120 90C140 120 140 160 120 188Z" fill="url(#p)"/>
+  <path d="M120 188C88 182 66 158 62 126C92 128 112 150 120 188Z" fill="url(#p)" opacity=".85"/>
+  <path d="M120 188C152 182 174 158 178 126C148 128 128 150 120 188Z" fill="url(#p)" opacity=".85"/>
+  <path d="M120 190C80 192 52 172 40 146C70 144 100 158 120 190Z" fill="#E88CA8" opacity=".7"/>
+  <path d="M120 190C160 192 188 172 200 146C170 144 140 158 120 190Z" fill="#E88CA8" opacity=".7"/>
+  <path d="M60 200h120" stroke="#2E7D5B" stroke-width="3" stroke-linecap="round"/>
+  <text x="120" y="248" text-anchor="middle" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#14452F">MINH PHÚ HƯNG</text>
+  <text x="120" y="268" text-anchor="middle" font-family="Georgia,serif" font-size="8" letter-spacing="1.5" fill="#C98F25">THANH CAO · TRÍ TUỆ · THỊNH VƯỢNG</text>
+</svg>

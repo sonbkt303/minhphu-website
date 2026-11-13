@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <rect width="240" height="300" fill="#F4F7FB"/>
+  <g stroke-linejoin="round">
+    <path d="M120 40L170 69V127L120 156L70 127V69Z" fill="#2563A8"/>
+    <path d="M120 40L170 69L120 98L70 69Z" fill="#7FB2E5"/>
+    <path d="M120 98V156L70 127V69Z" fill="#0C1E35"/>
+    <path d="M120 98V156L170 127V69Z" fill="#1E4D7B"/>
+    <path d="M44 120L82 142V186L44 164Z" fill="#0C1E35"/>
+    <path d="M44 120L82 98L120 120L82 142Z" fill="#7FB2E5"/>
+    <path d="M82 142L120 120V164L82 186Z" fill="#2563A8"/>
+    <path d="M158 142L196 120V164L158 186Z" fill="#2563A8"/>
+    <path d="M196 120L158 98L120 120L158 142Z" fill="#7FB2E5"/>
+    <path d="M158 142V186L196 164V120Z" fill="#0C1E35" opacity="0"/>
+  </g>
+  <circle cx="120" cy="28" r="12" fill="#F2B632"/>
+  <text x="120" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="800" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" letter-spacing="5" fill="#F2B632">LAND</text>
+</svg>
