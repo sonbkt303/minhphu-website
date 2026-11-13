@@ -22,7 +22,7 @@ Mở `index.html` để xem tất cả cạnh nhau. Mỗi file `.svg` là bản 
 | 14 | **Art Deco tia sáng** | Nền đen, nửa vòng tròn tỏa tia vàng kiểu những năm 1920. | Sang trọng, đẳng cấp, hợp phân khúc cao cấp, biệt thự. |
 | 15 | **Lục giác tổ ấm** | Lục giác navy, ngôi nhà nét trắng, mặt trời vàng phía trên. | Cân bằng giữa hiện đại và truyền thống; dễ dùng làm icon app. |
 | 16 | **Cổng vòm ánh sáng** | Cổng vòm (cổng làng/cổng thành) với mặt trời ở lối vào. Cổng = uy tín, bước vào tương lai. | Trang nghiêm, giàu hình ảnh, tạo chiều sâu. |
-| 17 | **Cách điệu M – mặt trời (hiện đại)** | Chữ M hai tông xanh như hai tấm gập, mặt trời vàng có con ngươi nằm trong khe chữ V, vệt vàng bên dưới. | Hiện đại, mạnh mẽ, đủ sáng tạo mà vẫn uy tín; dùng tốt cho web, app, bảng hiệu. |
+| 17 | **Mái đình chữ M – mặt trời Đông Sơn** | Hai mái đình cong tạo chữ M, hàng cột vàng và nền hai bậc, mặt trời 12 tia kiểu trống đồng phía trên. | Bất động sản nhà ở, đậm bản sắc Việt, hợp đất Tổ Phú Thọ. |
 
 ## Gợi ý
 - Giữ phong cách chính thống: **01** hoặc **02**.
