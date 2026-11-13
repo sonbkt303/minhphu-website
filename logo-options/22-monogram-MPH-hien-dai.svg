@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <defs>
+    <linearGradient id="n" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2563A8"/><stop offset="1" stop-color="#081423"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE9A8"/><stop offset="1" stop-color="#E09A1F"/></linearGradient>
+  </defs>
+  <rect width="240" height="300" fill="#FFFFFF"/>
+  <rect x="42" y="32" width="156" height="156" rx="40" fill="url(#n)"/>
+  <text x="120" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-2" fill="#FFFFFF">MPH</text>
+  <rect x="78" y="146" width="84" height="6" rx="3" fill="url(#g)"/>
+  <circle cx="166" cy="62" r="9" fill="url(#g)"/>
+  <text x="120" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="800" fill="#0C1E35">Minh Phú Hưng</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" letter-spacing="4" fill="#D9822B">LAND</text>
+</svg>

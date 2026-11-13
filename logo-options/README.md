@@ -24,6 +24,22 @@ Mở `index.html` để xem tất cả cạnh nhau. Mỗi file `.svg` là bản 
 | 16 | **Cổng vòm ánh sáng** | Cổng vòm (cổng làng/cổng thành) với mặt trời ở lối vào. Cổng = uy tín, bước vào tương lai. | Trang nghiêm, giàu hình ảnh, tạo chiều sâu. |
 | 17 | **Mái đình chữ M – mặt trời Đông Sơn** | Hai mái đình cong tạo chữ M, hàng cột vàng và nền hai bậc, mặt trời 12 tia kiểu trống đồng phía trên. | Bất động sản nhà ở, đậm bản sắc Việt, hợp đất Tổ Phú Thọ. |
 
+## Nhóm 18–27: nhiều phong cách hiện đại, uy tín, chuyên nghiệp
+Mỗi logo đều bám ngành bất động sản (ngôi nhà, mái, tòa nhà, skyline), ý nghĩa Minh (ánh sáng, sáng suốt, trí tuệ), Phú (vàng, no đủ) và Hưng (đi lên). Không bắt buộc có yếu tố văn hóa Việt; các phương án đậm văn hóa Việt nằm ở nhóm 06, 09, 10, 16, 17.
+
+| # | Phong cách | Ý tưởng | Hợp khi |
+|---|---|---|---|
+| 18 | Monoline (nét đơn) | Ngôi nhà nét mảnh, mặt trời trong nhà | Website, danh thiếp, tối giản |
+| 19 | Gradient ba thanh | Ba thanh bo góc chồng màu, cao dần | Thương hiệu số, mạng xã hội |
+| 20 | Negative space | Nhà trắng khoét từ vòng tròn navy, mặt trời vàng | Avatar, con dấu, tinh tế |
+| 21 | Low-poly facet | Ngôi nhà chia mảng tam giác như kim cương | Biển hiệu, tài liệu dự án |
+| 22 | Monogram MPH | Chữ MPH trong ô bo góc, chấm mặt trời | App icon, nhận diện nhanh |
+| 23 | Skyline tăng trưởng | Bảy thanh cao dần, đổi màu sang vàng | Hồ sơ năng lực, đầu tư tài chính |
+| 24 | Orbit vòng sáng | Ba vòng cung quanh ngôi nhà ở giữa | Lấy khách hàng làm trung tâm |
+| 25 | Luxury đen – vàng | Chữ M serif Didot, vòng vàng kép, mái nhà | Phân khúc cao cấp |
+| 26 | Proptech lưới ô | Chín ô vuông xếp thành ngôi nhà | Công nghệ, app khách hàng |
+| 27 | Chevron đi lên | Ba mái chevron xanh ngọc – vàng như mũi tên | Phát triển bền vững, tươi mới |
+
 ## Gợi ý
 - Giữ phong cách chính thống: **01** hoặc **02**.
 - Nhấn mạnh trí tuệ: **05**.

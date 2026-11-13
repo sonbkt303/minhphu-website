@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <rect width="240" height="300" fill="#FBF7EC"/>
+  <g fill="none" stroke-width="9" stroke-linecap="round" transform="translate(120 110) rotate(-135)">
+    <circle r="66" stroke="#0C1E35" stroke-dasharray="300 115"/>
+    <circle r="49" stroke="#2F7DD1" stroke-dasharray="220 88"/>
+    <circle r="32" stroke="#F2B632" stroke-dasharray="140 61"/>
+  </g>
+  <path d="M120 90L142 110V134H98V110Z" fill="#0C1E35"/>
+  <rect x="112" y="116" width="16" height="18" rx="8" fill="#F2B632"/>
+  <text x="120" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="1" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="8.5" letter-spacing="4" fill="#9C7120">VÒNG SÁNG AN CƯ</text>
+</svg>

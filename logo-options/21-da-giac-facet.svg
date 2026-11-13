@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <rect width="240" height="300" fill="#FBF7EC"/>
+  <path d="M120 44L56 98L120 120Z" fill="#1E4D7B"/>
+  <path d="M120 44L184 98L120 120Z" fill="#3B86D1"/>
+  <path d="M56 98L120 120V176H56Z" fill="#0C1E35"/>
+  <path d="M184 98L120 120V176H184Z" fill="#14385F"/>
+  <path d="M100 176L120 128L140 176Z" fill="#F2B632"/>
+  <path d="M120 128L140 176L120 176Z" fill="#D9822B"/>
+  <text x="120" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#0C1E35">MINH PHÚ HƯNG</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="8.5" letter-spacing="3" fill="#9C7120">VỮNG NỀN · SÁNG TẦM NHÌN</text>
+</svg>

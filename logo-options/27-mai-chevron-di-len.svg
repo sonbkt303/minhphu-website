@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+  <rect width="240" height="300" fill="#FFFFFF"/>
+  <g fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 176L120 128L182 176" stroke="#0F766E"/>
+    <path d="M58 146L120 98L182 146" stroke="#14B8A6"/>
+    <path d="M58 116L120 68L182 116" stroke="#F2B632"/>
+  </g>
+  <text x="120" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="1" fill="#0F3D3A">MINH PHÚ HƯNG</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="8.5" letter-spacing="4" fill="#0F766E">HƯNG THỊNH TỪNG TẦNG</text>
+</svg>
