@@ -3,6 +3,7 @@ import Effects from "@/components/Effects";
 import ContactForm from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
+import LegalLinks from "@/components/LegalLinks";
 import NewsList, { type Article } from "@/components/NewsList";
 import GalleryMosaic from "@/components/GalleryMosaic";
 import ProjectCards, { type Project } from "@/components/ProjectCards";
@@ -349,12 +350,19 @@ export default function Home() {
         <div className="container fgrid">
           <div>
             <Logo tone="light" />
-            <p>TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ<br />Hotline: <a href="tel:0988056886">0988056886</a><br />Email: <a href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a><br />GCNĐKDN: 2500783313</p>
+            <p>Chủ đầu tư các dự án nhà ở dành cho cán bộ, chiến sĩ Công an nhân dân tại Phú Thọ, cam kết minh bạch, chất lượng và đúng tiến độ.</p>
           </div>
           <div><h4>Dự án</h4><a href="#projects">Khu Đồng Mái</a><a href="#projects">Nhà ở XH</a><a href="#projects">Nhà ở TM</a></div>
-          <div><h4>Pháp lý</h4><a href="#">Điều khoản</a><a href="#">Bảo mật</a><a href="#">Giấy phép</a></div>
+          <LegalLinks />
+          <div>
+            <h4>Liên hệ</h4>
+            <p className="fc">TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ<br />Hotline: <a href="tel:0988056886">0988056886</a><br />Email: <a href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a></p>
+          </div>
         </div>
-        <p className="copy">© 2026 Công ty TNHH Đầu tư BĐS Minh Phú Hưng. Bảo lưu mọi quyền.</p>
+        <div className="container copy">
+          <span>© 2026 Công ty TNHH Đầu tư BĐS Minh Phú Hưng. Bảo lưu mọi quyền.</span>
+          <span>GCNĐKDN: 2500783313 · Vốn điều lệ 460 tỷ đồng</span>
+        </div>
       </footer>
     </>
   );
