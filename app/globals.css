@@ -8,6 +8,7 @@ img{display:block;max-width:100%}
 ul{list-style:none}
 .container{width:min(1200px,92%);margin:auto}
 h1,h2,h3{font-family:var(--display);line-height:1.12;color:var(--navy);font-weight:600}
+h1,h2,h3,.stats b,.badge b,.tl-item em{font-variant-numeric:lining-nums}
 h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-bottom:1rem;letter-spacing:-.01em}
 h3{font-size:1.55rem;margin-bottom:.5rem}
 .muted{color:var(--muted)}
@@ -169,7 +170,7 @@ form .btn{justify-content:center}
   .grid2{gap:3rem}
   .pcard{aspect-ratio:4/3}
   .mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
-  .g-a{grid-column:span 2}.g-e{grid-column:span 2}
+  .g-a{grid-column:span 2}.g-d{grid-row:span 1}.g-e{grid-column:span 1}.g-f{grid-column:span 2}
   .stats{grid-template-columns:repeat(2,1fr);row-gap:1.4rem}
   .stats>div:nth-child(2){border:0}
   .burger{display:flex}
