@@ -3,6 +3,7 @@ import Effects from "@/components/Effects";
 import ContactForm from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
+import NewsList, { type Article } from "@/components/NewsList";
 import GalleryMosaic from "@/components/GalleryMosaic";
 import ProjectCards, { type Project } from "@/components/ProjectCards";
 
@@ -76,10 +77,75 @@ const milestones = [
   ["2029–2030", "Giai đoạn 2", "568 căn NOXH còn lại + 15 căn thấp tầng"],
 ];
 
-const news = [
-  [P.n1, "Tin dự án", "Khởi công Giai đoạn 1 dự án Khu Đồng Mái", "Kế hoạch triển khai hạ tầng và 665 căn nhà ở xã hội dự kiến từ Q3/2026."],
-  [P.n2, "Pháp lý", "Dự án được phê duyệt theo QĐ 6061/QĐ-BCA-H02", "Cơ sở pháp lý đầy đủ cho nhà ở lực lượng vũ trang Công an nhân dân."],
-  [P.a1, "Sự kiện", "Minh Phú Hưng Land chính thức ra mắt", "Công ty đặt mục tiêu phát triển nhà ở chất lượng cao tại Phú Thọ."],
+const news: Article[] = [
+  {
+    img: P.n1, tag: "Tin dự án", read: "3 phút",
+    title: "Khởi công Giai đoạn 1 dự án Khu Đồng Mái",
+    excerpt: "Kế hoạch triển khai hạ tầng và 665 căn nhà ở xã hội dự kiến từ Q3/2026.",
+    lead: "Giai đoạn 1 của dự án Khu Đồng Mái được xác định là bước khởi đầu quan trọng, tạo nền tảng hạ tầng đồng bộ cho toàn bộ khu đô thị.",
+    body: [
+      "Theo kế hoạch, Giai đoạn 1 tập trung đầu tư hạ tầng kỹ thuật và xây dựng 665 căn nhà ở xã hội dành cho cán bộ, chiến sĩ lực lượng Công an nhân dân, dự kiến triển khai từ Quý 3/2026.",
+      "Minh Phú Hưng Land cam kết tổ chức thi công theo đúng tiến độ, kiểm soát chặt chẽ chất lượng vật liệu, an toàn lao động và vệ sinh môi trường trong suốt quá trình xây dựng.",
+      "Toàn bộ dự án có quy mô hơn 50.000 m², tổng vốn đầu tư khoảng 2.262 tỷ đồng với 1.233 căn hộ, được phát triển theo hai giai đoạn.",
+    ],
+    points: ["665 căn nhà ở xã hội trong Giai đoạn 1", "Hạ tầng kỹ thuật đồng bộ, cây xanh và tiện ích nội khu", "Cam kết tiến độ và chất lượng công trình"],
+  },
+  {
+    img: P.n2, tag: "Pháp lý", read: "4 phút",
+    title: "Dự án được phê duyệt theo QĐ 6061/QĐ-BCA-H02",
+    excerpt: "Cơ sở pháp lý đầy đủ cho nhà ở lực lượng vũ trang Công an nhân dân.",
+    lead: "Pháp lý minh bạch là nền tảng để khách hàng an tâm lựa chọn. Dự án được triển khai trên cơ sở Quyết định số 6061/QĐ-BCA-H02.",
+    body: [
+      "Quyết định 6061/QĐ-BCA-H02 là căn cứ pháp lý cho việc đầu tư xây dựng dự án nhà ở dành cho lực lượng vũ trang Công an nhân dân tại Phú Thọ.",
+      "Minh Phú Hưng Land luôn công khai thông tin pháp lý, quy hoạch và tiến độ để khách hàng có thể kiểm chứng và theo dõi thuận tiện.",
+      "Đội ngũ tư vấn sẵn sàng giải đáp về đối tượng, điều kiện và quy trình đăng ký mua nhà ở xã hội theo quy định hiện hành.",
+    ],
+    points: ["Phê duyệt theo QĐ 6061/QĐ-BCA-H02", "Thông tin pháp lý công khai, minh bạch", "Hỗ trợ tư vấn thủ tục đăng ký"],
+  },
+  {
+    img: P.a1, tag: "Sự kiện", read: "2 phút",
+    title: "Minh Phú Hưng Land chính thức ra mắt",
+    excerpt: "Công ty đặt mục tiêu phát triển nhà ở chất lượng cao tại Phú Thọ.",
+    lead: "Với vốn điều lệ 460 tỷ đồng, Minh Phú Hưng Land bước vào thị trường với khát vọng kiến tạo những khu ở chất lượng, bền vững.",
+    body: [
+      "Lấy tinh thần “Minh bạch – Phú quý – Hưng thịnh” làm kim chỉ nam, công ty hướng đến việc phát triển các dự án nhà ở tại Phú Thọ với pháp lý rõ ràng, thiết kế hiện đại và tiến độ cam kết.",
+      "Ban lãnh đạo do ông Vũ Văn Minh (Chủ tịch HĐTV) và ông Lê Đức Thọ (Tổng giám đốc) dẫn dắt, đặt khách hàng và cộng đồng làm trung tâm của mọi quyết định.",
+    ],
+    points: ["Vốn điều lệ 460 tỷ đồng", "Định hướng phát triển nhà ở chất lượng cao", "Giá trị cốt lõi: Minh bạch · Phú quý · Hưng thịnh"],
+  },
+  {
+    img: P.g2, tag: "Thiết kế", read: "3 phút",
+    title: "Kiến trúc hiện đại, không gian sống xanh",
+    excerpt: "Quy hoạch ưu tiên mảng xanh, ánh sáng tự nhiên và tiện ích nội khu.",
+    lead: "Mỗi căn hộ được thiết kế để tối ưu ánh sáng, thông gió và sự riêng tư, mang lại cảm giác thư thái mỗi ngày.",
+    body: [
+      "Tổng thể quy hoạch kết hợp tòa nhà cao tầng với mảng xanh, lối đi dạo và không gian sinh hoạt cộng đồng, tạo nên môi trường sống an toàn, văn minh.",
+      "Các căn hộ có công năng linh hoạt, vật liệu hoàn thiện bền đẹp, phù hợp với nhu cầu của các gia đình trẻ.",
+    ],
+    points: ["Mật độ xây dựng hợp lý, nhiều cây xanh", "Căn hộ thông thoáng, đón ánh sáng tự nhiên", "Tiện ích nội khu đáp ứng nhu cầu hằng ngày"],
+  },
+  {
+    img: P.g5, tag: "Tiện ích", read: "2 phút",
+    title: "Tiện ích nội khu đáp ứng cuộc sống thường nhật",
+    excerpt: "Từ khu vui chơi, sân vườn đến dịch vụ thương mại ngay dưới chân tòa nhà.",
+    lead: "Cuộc sống tiện nghi bắt đầu từ những tiện ích gần gũi, đủ đầy ngay trong khuôn viên dự án.",
+    body: [
+      "Dự án quy hoạch khu vui chơi trẻ em, sân vườn, không gian sinh hoạt chung và khu thương mại dịch vụ để cư dân thuận tiện trong sinh hoạt.",
+      "Hệ thống an ninh, bãi đỗ xe và hạ tầng kỹ thuật được thiết kế đồng bộ, hướng đến sự an tâm lâu dài.",
+    ],
+    points: ["Sân vườn và khu vui chơi trẻ em", "Khu thương mại dịch vụ nội khu", "An ninh và bãi đỗ xe đồng bộ"],
+  },
+  {
+    img: P.g3, tag: "Cộng đồng", read: "2 phút",
+    title: "Kiến tạo cộng đồng cư dân văn minh, gắn kết",
+    excerpt: "Hướng tới một môi trường sống an toàn, thân thiện cho các gia đình.",
+    lead: "Hơn cả một nơi để ở, dự án hướng tới xây dựng cộng đồng cư dân gắn kết, văn minh và nghĩa tình.",
+    body: [
+      "Minh Phú Hưng Land chú trọng các hoạt động kết nối cư dân, vận hành chuyên nghiệp và chăm sóc khách hàng sau bàn giao.",
+      "Mục tiêu là mang đến cho mỗi gia đình một tổ ấm bình yên, nơi các thế hệ cùng phát triển.",
+    ],
+    points: ["Vận hành và quản lý chuyên nghiệp", "Chăm sóc khách hàng sau bàn giao", "Môi trường sống an toàn, thân thiện"],
+  },
 ];
 
 const marquee = ["Pháp lý minh bạch", "Quy hoạch xanh", "Tiến độ cam kết", "Chất lượng bền vững", "Cộng đồng văn minh", "Giá trị trường tồn"];
@@ -224,14 +290,7 @@ export default function Home() {
               <p className="eyebrow">Tin tức</p>
               <h2>Tin tức mới nhất</h2>
             </div>
-            <div className="cards">
-              {news.map(([id, tag, t, d]) => (
-                <article className="ncard reveal" key={t}>
-                  <img src={img(id, 800)} alt={t} loading="lazy" />
-                  <div><span className="chip">{tag}</span><h3>{t}</h3><p>{d}</p></div>
-                </article>
-              ))}
-            </div>
+            <NewsList items={news} />
           </div>
         </section>
 
