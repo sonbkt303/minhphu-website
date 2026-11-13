@@ -3,6 +3,7 @@ import Effects from "@/components/Effects";
 import ContactForm from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
+import ProjectCards, { type Project } from "@/components/ProjectCards";
 
 const profile: [string, React.ReactNode][] = [
   ["Mã số ĐKDN", "2500783313"],
@@ -35,10 +36,19 @@ const P = {
   n2: "photo-1523217582562-09d0def993a6",
 };
 
-const projects = [
-  [P.p1, "Tòa VT1", "Nhà ở xã hội", "247 căn · 70m² · 20 tầng", "Đang triển khai"],
-  [P.p2, "Tòa VT2", "Nhà ở xã hội", "418 căn · 70m² · 20 tầng", "Đang triển khai"],
-  [P.p3, "Tòa TM", "Nhà ở thương mại", "179 căn · 74–123m²", "Mở bán"],
+const projects: Project[] = [
+  {
+    cover: P.p1, title: "Tòa VT1", kind: "Nhà ở xã hội", desc: "247 căn · 70m² · 20 tầng", tag: "Đang triển khai",
+    album: [[P.p1, "Phối cảnh tổng thể"], [P.g2, "Kiến trúc hiện đại"], [P.g1, "Phòng khách"], [P.g5, "Nội thất tinh tế"], [P.a1, "Mặt đứng tòa nhà"], [P.g6, "Căn hộ mẫu"]],
+  },
+  {
+    cover: P.p2, title: "Tòa VT2", kind: "Nhà ở xã hội", desc: "418 căn · 70m² · 20 tầng", tag: "Đang triển khai",
+    album: [[P.p2, "Phối cảnh tổng thể"], [P.a1, "Mặt đứng tòa nhà"], [P.g3, "Không gian sống"], [P.g6, "Căn hộ mẫu"], [P.g1, "Phòng khách"], [P.a2, "Tiện ích nội khu"]],
+  },
+  {
+    cover: P.p3, title: "Tòa TM", kind: "Nhà ở thương mại", desc: "179 căn · 74–123m²", tag: "Mở bán",
+    album: [[P.p3, "Phối cảnh tổng thể"], [P.g4, "Nhà thấp tầng"], [P.g3, "Không gian sống"], [P.g5, "Nội thất tinh tế"], [P.g2, "Kiến trúc hiện đại"], [P.hero, "Toàn cảnh khu đô thị"]],
+  },
 ];
 
 const why = [
@@ -159,21 +169,7 @@ export default function Home() {
               <h2>Khu Đồng Mái</h2>
               <p className="muted">Nhà ở LLVT Công an tại Phường Vĩnh Phúc, Phú Thọ<br />~2.262,3 tỷ đồng · 50.000 m² · 1.233 căn hộ</p>
             </div>
-            <div className="cards">
-              {projects.map(([id, t, kind, d, tag]) => (
-                <div className="tilt reveal" key={t}>
-                  <article className="pcard">
-                    <img src={img(id, 900)} alt={`${t} – ${kind}`} loading="lazy" />
-                    <div className="pcard-body">
-                      <span className="chip">{tag}</span>
-                      <h3>{t}</h3>
-                      <p>{kind}</p>
-                      <small>{d}</small>
-                    </div>
-                  </article>
-                </div>
-              ))}
-            </div>
+            <ProjectCards projects={projects} />
           </div>
         </section>
 
