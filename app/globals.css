@@ -156,6 +156,7 @@ form .btn{justify-content:center}
 .fgrid p{margin-top:1.4rem}
 .fgrid h4{color:var(--gold-light);margin-bottom:1rem;font:600 1.2rem var(--display);letter-spacing:.05em}
 .fgrid div>a:not(.logo){display:block;margin-bottom:.5rem}
+.fnote{display:block;margin-top:1rem;font-size:.85rem;opacity:.75;line-height:1.7}
 .fgrid a:hover{color:var(--gold-light)}
 .copy{text-align:center;margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem;opacity:.6}
 
