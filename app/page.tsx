@@ -69,10 +69,25 @@ const news = [
   [P.a1, "Sự kiện", "Minh Phú Hưng Land chính thức ra mắt", "Công ty đặt mục tiêu phát triển nhà ở chất lượng cao tại Phú Thọ."],
 ];
 
+const marquee = ["Pháp lý minh bạch", "Quy hoạch xanh", "Tiến độ cam kết", "Chất lượng bền vững", "Cộng đồng văn minh", "Giá trị trường tồn"];
+
+function Words({ text, start }: { text: string; start: number }) {
+  return (
+    <>
+      {text.split(" ").map((w, i) => (
+        <span className="w" key={i} style={{ ["--i" as string]: start + i }}>
+          <span>{w}</span>{" "}
+        </span>
+      ))}
+    </>
+  );
+}
+
 export default function Home() {
   return (
     <>
       <div className="progress" id="progress" />
+      <div className="cursor-glow" id="glow" aria-hidden="true" />
       <Navbar />
       <Effects />
 
@@ -80,9 +95,14 @@ export default function Home() {
         <section className="hero" id="home">
           <div className="hero-bg" id="heroBg" style={{ backgroundImage: `url(${img(P.hero, 2000)})` }} />
           <div className="hero-shade" />
+          <canvas className="sparkles" id="sparkles" aria-hidden="true" />
           <div className="container hero-inner">
             <p className="eyebrow light line-in">Nhà đầu tư BĐS uy tín · Phú Thọ</p>
-            <h1 className="line-in">Kiến tạo không gian<br /><em>sống thanh thoát</em></h1>
+            <h1>
+              <Words text="Kiến tạo không gian" start={0} />
+              <br />
+              <em><Words text="sống thanh thoát" start={3} /></em>
+            </h1>
             <p className="lead line-in">Chủ đầu tư dự án nhà ở lực lượng vũ trang Công an nhân dân tại Phú Thọ — nơi chất lượng sống được nâng tầm mỗi ngày.</p>
             <div className="line-in">
               <a href="#projects" className="btn">Khám phá dự án</a>
@@ -102,8 +122,8 @@ export default function Home() {
         <section className="section" id="about">
           <div className="container grid2">
             <div className="collage reveal">
-              <img className="c1" src={img(P.a1, 900)} alt="Công trình hiện đại" loading="lazy" />
-              <img className="c2" src={img(P.a2, 700)} alt="Không gian sống" loading="lazy" />
+              <img className="c1" data-speed="0.05" src={img(P.a1, 900)} alt="Công trình hiện đại" loading="lazy" />
+              <img className="c2" data-speed="-0.08" src={img(P.a2, 700)} alt="Không gian sống" loading="lazy" />
               <div className="badge"><b>2026</b><span>Năm thành lập</span></div>
             </div>
             <div className="reveal">
@@ -120,6 +140,18 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="marquee" aria-hidden="true">
+          <div className="marquee-track">
+            {[0, 1].map((k) => (
+              <div className="marquee-set" key={k}>
+                {marquee.map((m) => (
+                  <span key={m}>{m}<i>✦</i></span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <section className="section soft" id="projects">
           <div className="container">
             <div className="head">
@@ -129,15 +161,17 @@ export default function Home() {
             </div>
             <div className="cards">
               {projects.map(([id, t, kind, d, tag]) => (
-                <article className="pcard reveal" key={t}>
-                  <img src={img(id, 900)} alt={`${t} – ${kind}`} loading="lazy" />
-                  <div className="pcard-body">
-                    <span className="chip">{tag}</span>
-                    <h3>{t}</h3>
-                    <p>{kind}</p>
-                    <small>{d}</small>
-                  </div>
-                </article>
+                <div className="tilt reveal" key={t}>
+                  <article className="pcard">
+                    <img src={img(id, 900)} alt={`${t} – ${kind}`} loading="lazy" />
+                    <div className="pcard-body">
+                      <span className="chip">{tag}</span>
+                      <h3>{t}</h3>
+                      <p>{kind}</p>
+                      <small>{d}</small>
+                    </div>
+                  </article>
+                </div>
               ))}
             </div>
           </div>
