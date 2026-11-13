@@ -3,6 +3,7 @@ import Effects from "@/components/Effects";
 import ContactForm from "@/components/ContactForm";
 import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
+import WhyCards from "@/components/WhyCards";
 import LegalLinks from "@/components/LegalLinks";
 import NewsList, { type Article } from "@/components/NewsList";
 import GalleryMosaic from "@/components/GalleryMosaic";
@@ -53,13 +54,6 @@ const projects: Project[] = [
     cover: P.p3, title: "Tòa TM", kind: "Nhà ở thương mại", desc: "179 căn · 74–123m²", tag: "Mở bán",
     album: [[P.p3, "Phối cảnh tổng thể"], [P.g4, "Nhà thấp tầng"], [P.g3, "Không gian sống"], [P.g5, "Nội thất tinh tế"], [P.g2, "Kiến trúc hiện đại"], [P.hero, "Toàn cảnh khu đô thị"]],
   },
-];
-
-const why = [
-  ["scale", "Pháp lý đầy đủ", "Quyết định BCA số 6061/QĐ-BCA-H02"],
-  ["wallet", "Vốn vững chắc", "460 tỷ vốn điều lệ, 4 cổ đông chiến lược"],
-  ["layout", "Quy hoạch chuẩn", "Mật độ xây dựng 21%, nhiều cây xanh"],
-  ["clock", "Tiến độ đúng hạn", "Giai đoạn 1 hoàn thành Q4/2028"],
 ];
 
 const gallery = [
@@ -279,11 +273,7 @@ export default function Home() {
               <h2>Lý do chọn chúng tôi</h2>
               <p className="muted">Uy tín · Chuyên nghiệp · Minh bạch</p>
             </div>
-            <div className="cards four">
-              {why.map(([ico, t, d]) => (
-                <article className="fcard reveal" key={t}><div className="ico"><Icon name={ico} size={28} /></div><h3>{t}</h3><p>{d}</p></article>
-              ))}
-            </div>
+            <WhyCards />
           </div>
         </section>
 
