@@ -391,3 +391,33 @@ h2{background:linear-gradient(100deg,var(--navy) 40%,var(--navy-light));-webkit-
   .collage img{clip-path:none}
   .sparkles{display:none}
 }
+/* Brighter hero */
+.hero-bg{filter:brightness(1.45) saturate(1.2) contrast(1.05)}
+.hero-shade{background:linear-gradient(100deg,rgba(21,48,92,.62) 0%,rgba(21,48,92,.28) 55%,rgba(184,146,58,.08) 100%),linear-gradient(0deg,rgba(11,31,63,.5),transparent 40%)}
+.hero h1,.hero .lead{text-shadow:0 2px 18px rgba(11,31,63,.55)}
+/* Brighter navy sections */
+.navy,.marquee,.footer,.badge{background:radial-gradient(120% 90% at 15% 0%,rgba(232,207,133,.18),transparent 55%),linear-gradient(135deg,#1F4A8C 0%,#173A70 55%,#1B4380 100%)}
+.navy .head p,.navy p{opacity:.92}
+.footer{color:#d3dbe6}
+.philo{background:radial-gradient(circle at 20% 0%,#2D5CA3 0,#1B4380 60%,#173A70 100%)}
+
+/* Minh Phú Hưng philosophy, vision, mission */
+.philo .head h2{font-size:clamp(1.6rem,3.4vw,2.6rem)}
+.mph{margin-bottom:4rem}
+.mph-card{text-align:center;position:relative}
+.mph-card .han{display:block;font:600 3.6rem/1 var(--display);background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.mph-card h3 small{font-size:.8em;color:var(--gold-light);font-weight:400}
+.mph-card strong{display:block;color:var(--gold-light);font-weight:600;margin-bottom:.8rem;font-family:var(--display);font-size:1.1rem}
+.philo-sub{margin-top:1rem}
+.vm{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-bottom:3rem}
+.vm-box{padding:2rem;border:1px solid rgba(184,146,58,.4);border-radius:18px;background:linear-gradient(160deg,#fff,#F3EBD9)}
+.vm-box h3{color:#15305C;margin-bottom:.8rem}
+.vm-box p,.vm-box li{line-height:1.8;color:#3a4558}
+.vm-box ul{padding-left:1.1rem;display:grid;gap:.6rem}
+.vm-box li b{color:#8a6a22}
+.cv-title{text-align:center;margin-bottom:1.5rem;color:#15305C}
+.cv{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem}
+.cv-item{padding:1.4rem 1.1rem;border-radius:14px;background:#fff;border-top:3px solid var(--gold);box-shadow:0 10px 30px rgba(21,48,92,.08)}
+.cv-item b{display:block;color:#15305C;font:600 1.2rem var(--display);margin-bottom:.4rem}
+.cv-item p{font-size:.88rem;line-height:1.6;color:#4a5568}
+@media(max-width:1000px){.vm{grid-template-columns:1fr}.cv{grid-template-columns:repeat(2,1fr)}.mph{grid-template-columns:1fr}}

@@ -77,6 +77,27 @@ const pillars = [
   ["Phát triển bền vững", "Quy hoạch nhiều cây xanh, mặt nước, tiện ích cộng đồng; mật độ xây dựng thấp để thế hệ hôm nay và mai sau cùng thụ hưởng môi trường sống lành mạnh."],
 ];
 
+const minhPhuHung = [
+  ["明", "MINH", "Trí tuệ dẫn lối", "Mỗi dự án của Minh Phú Hưng bắt đầu từ tư duy sáng suốt: nghiên cứu kỹ lưỡng, tính toán thấu đáo và nhìn xa trông rộng. Chúng tôi tin rằng trí tuệ là ánh sáng soi đường cho mọi quyết định đầu tư, giúp mỗi bước đi đúng hướng và mỗi công trình đúng giá trị."],
+  ["富", "PHÚ", "Thịnh vượng để sẻ chia", "Giá trị chúng tôi tạo ra không dừng ở lợi nhuận doanh nghiệp. Đó là mái ấm cho mỗi gia đình, tài sản bền vững cho khách hàng, lợi ích hài hòa cho đối tác và đóng góp thiết thực cho cộng đồng."],
+  ["興", "HƯNG", "Hưng thịnh để trường tồn", "Chúng tôi không chạy theo thành công ngắn hạn. Phát triển thận trọng, quản trị rủi ro chặt chẽ và không ngừng đổi mới là con đường để doanh nghiệp cùng các công trình bền vững theo thời gian."],
+];
+
+const missions = [
+  ["Với khách hàng", "Kiến tạo những không gian sống an toàn, tiện nghi, được quy hoạch thông minh để mỗi gia đình yên tâm an cư."],
+  ["Với đối tác", "Hợp tác trên nền tảng hiểu biết, chuyên nghiệp và cùng phát triển lâu dài."],
+  ["Với cộng đồng", "Góp phần giải quyết nhu cầu nhà ở, đặc biệt là nhà ở xã hội cho các lực lượng và người lao động."],
+  ["Với đội ngũ", "Xây dựng môi trường làm việc trọng tri thức, khuyến khích sáng tạo và học hỏi không ngừng."],
+];
+
+const coreValues = [
+  ["Trí tuệ", "Tư duy sáng suốt, quyết định dựa trên hiểu biết và tầm nhìn dài hạn"],
+  ["Chính trực", "Rõ ràng, đúng pháp luật trong mọi cam kết và giao dịch"],
+  ["Tận tâm", "Đặt sự an tâm và lợi ích của khách hàng lên trước"],
+  ["Đồng lòng", "Gắn kết nội bộ, đối tác và khách hàng như hai nhánh nguyệt quế đan vào nhau"],
+  ["Bền vững", "Phát triển thận trọng, quản trị rủi ro, hướng tới lâu dài"],
+];
+
 const landUse: [string, number, string][] = [
   ["Đất ở (xã hội + thương mại)", 21630, "m²"],
   ["Giao thông, bãi đỗ xe", 17100, "m²"],
@@ -218,7 +239,7 @@ export default function Home() {
           <div className="hero-shade" />
           <canvas className="sparkles" id="sparkles" aria-hidden="true" />
           <div className="container hero-inner">
-            <p className="eyebrow light line-in">Nhà đầu tư BĐS uy tín · Phú Thọ</p>
+            <p className="eyebrow light line-in">Tầm nhìn sáng suốt – Giá trị thịnh vượng – Phát triển trường tồn</p>
             <h1>
               <Words text="Kiến tạo không gian" start={0} />
               <br />
@@ -265,6 +286,20 @@ export default function Home() {
           <div className="container">
             <div className="head">
               <p className="eyebrow light">Triết lý phát triển</p>
+              <h2>Minh để dẫn lối – Phú để sẻ chia – Hưng để trường tồn</h2>
+              <p>Tầm nhìn sáng suốt – Giá trị thịnh vượng – Phát triển trường tồn</p>
+            </div>
+            <div className="cards mph">
+              {minhPhuHung.map(([han, t, s, d]) => (
+                <div className="philo-card mph-card reveal" key={t}>
+                  <span className="han">{han}</span>
+                  <h3>{t} <small>({han})</small></h3>
+                  <strong>{s}</strong>
+                  <p>{d}</p>
+                </div>
+              ))}
+            </div>
+            <div className="head philo-sub">
               <h2>Xây nhà cho người giữ bình yên</h2>
               <p>Phát triển bất động sản gắn liền với trách nhiệm xã hội</p>
             </div>
@@ -284,6 +319,38 @@ export default function Home() {
             <p className="philo-why reveal">
               <b>Vì sao chúng tôi chọn xây dựng nhà ở cho lực lượng vũ trang?</b> Bởi chúng tôi tin rằng một doanh nghiệp bền vững là doanh nghiệp biết đặt giá trị cộng đồng lên trước lợi ích ngắn hạn: khi người chiến sĩ có một mái ấm ổn định, xã hội có thêm một nền tảng vững vàng cho an ninh và phát triển.
             </p>
+          </div>
+        </section>
+
+        <section className="section" id="vision">
+          <div className="container">
+            <div className="head">
+              <p className="eyebrow">Định hướng</p>
+              <h2>Tầm nhìn · Sứ mệnh · Giá trị cốt lõi</h2>
+            </div>
+            <div className="vm reveal">
+              <div className="vm-box">
+                <h3>Tầm nhìn</h3>
+                <p>Trở thành nhà đầu tư và phát triển bất động sản có tầm nhìn sáng suốt, uy tín và bền vững, được khách hàng tin chọn và đối tác tin cậy. Dấu ấn của chúng tôi là những dự án nhà ở chất lượng, được kiến tạo bằng trí tuệ và mang giá trị thực.</p>
+              </div>
+              <div className="vm-box">
+                <h3>Sứ mệnh</h3>
+                <ul>
+                  {missions.map(([k, v]) => (
+                    <li key={k}><b>{k}:</b> {v}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <h3 className="cv-title reveal">Giá trị cốt lõi</h3>
+            <div className="cv reveal">
+              {coreValues.map(([k, v]) => (
+                <div className="cv-item" key={k}>
+                  <b>{k}</b>
+                  <p>{v}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
