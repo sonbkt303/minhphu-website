@@ -5,6 +5,7 @@ import Logo from "@/components/Logo";
 
 const links = [
   ["#about", "Giới thiệu"],
+  ["#philosophy", "Triết lý"],
   ["#projects", "Dự án"],
   ["#why", "Năng lực"],
   ["#timeline", "Tiến độ"],

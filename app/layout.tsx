@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "Minh Phú Hưng Land – Chủ đầu tư dự án nhà ở Công an nhân dân tại Phú Thọ",
   description:
-    "Công ty TNHH Đầu tư BĐS Minh Phú Hưng – chủ đầu tư dự án Nhà ở lực lượng vũ trang Công an nhân dân tại Khu Đồng Mái, Phường Vĩnh Phúc, Phú Thọ. 1.233 căn hộ, tổng vốn ~2.262 tỷ đồng.",
+    "Công ty TNHH Đầu tư BĐS Minh Phú Hưng – chủ đầu tư dự án Nhà ở lực lượng vũ trang Công an nhân dân tại Khu Đồng Mái, Phường Vĩnh Phúc, Phú Thọ. 1.233 căn hộ, tổng mức đầu tư ~2.262 tỷ đồng.",
   keywords: ["bất động sản Phú Thọ", "nhà ở xã hội Vĩnh Phúc", "Minh Phú Hưng Land", "Khu Đồng Mái"],
   alternates: { canonical: "/" },
   openGraph: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = { themeColor: "#0C1E35" };
+export const viewport: Viewport = { themeColor: "#0B1F3F" };
 
 const jsonLd = {
   "@context": "https://schema.org",

@@ -38,7 +38,7 @@ const docs: Doc[] = [
     title: "Giấy phép & Pháp lý doanh nghiệp",
     updated: "01/01/2026",
     sections: [
-      { h: "Thông tin doanh nghiệp", p: ["Tên đầy đủ: Công ty TNHH Đầu tư Bất động sản Minh Phú Hưng.", "Mã số doanh nghiệp (GCNĐKDN): 2500783313.", "Trụ sở: TDP Khai Quang, phường Vĩnh Phúc, tỉnh Phú Thọ.", "Vốn điều lệ: 460 tỷ đồng. Chủ tịch: Vũ Văn Minh. Tổng giám đốc: Lê Đức Thọ."] },
+      { h: "Thông tin doanh nghiệp", p: ["Tên đầy đủ: Công ty TNHH Đầu tư Bất động sản Minh Phú Hưng.", "Mã số doanh nghiệp (GCNĐKDN): 2500783313.", "Trụ sở: TDP Khai Quang, phường Vĩnh Phúc, tỉnh Phú Thọ.", "Chủ tịch: Vũ Văn Minh. Tổng giám đốc: Lê Đức Thọ."] },
       { h: "Cơ sở pháp lý dự án", p: ["Dự án nhà ở Công an nhân dân được triển khai theo Quyết định số 6061/QĐ-BCA-H02 của Bộ Công an về việc phê duyệt chủ trương đầu tư và lựa chọn chủ đầu tư.", "Dự án thực hiện theo Luật Nhà ở, Luật Đất đai, Luật Kinh doanh bất động sản và các văn bản hướng dẫn hiện hành."] },
       { h: "Minh bạch & kiểm chứng", p: ["Khách hàng có thể tra cứu thông tin doanh nghiệp trên Cổng thông tin quốc gia về đăng ký doanh nghiệp (dangkykinhdoanh.gov.vn) bằng mã số 2500783313.", "Hồ sơ pháp lý dự án được cung cấp bản sao đầy đủ khi khách hàng làm việc trực tiếp tại văn phòng Công ty."] },
       { h: "Xác minh thông tin", p: ["Để đảm bảo quyền lợi, hãy liên hệ chính thức qua hotline 0988056886 hoặc email congtyminhphuhung@gmail.com để xác minh mọi thông tin trước khi giao dịch."] },

@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-export const img = (id: string, w: number) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=75`;
+export const img = (id: string, w: number) => (id.startsWith("/") ? id : `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=75`);
 
 export default function Lightbox({ title, album, start = 0, onClose }: { title: string; album: [string, string][]; start?: number; onClose: () => void }) {
   const [idx, setIdx] = useState(start);

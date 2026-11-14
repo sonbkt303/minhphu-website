@@ -11,7 +11,6 @@ import ProjectCards, { type Project } from "@/components/ProjectCards";
 
 const profile: [string, React.ReactNode][] = [
   ["Mã số ĐKDN", "2500783313"],
-  ["Vốn điều lệ", "460.000.000.000 đồng"],
   ["Chủ tịch HĐTV", "Vũ Văn Minh"],
   ["Tổng giám đốc", "Lê Đức Thọ"],
   ["Địa chỉ", "TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ"],
@@ -20,25 +19,30 @@ const profile: [string, React.ReactNode][] = [
 ];
 
 
-const img = (id: string, w = 1000) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=75`;
+const D = (n: string) => `/du-an/${n}.jpg`;
 const P = {
-  hero: "photo-1545324418-cc1a3fa10c00",
-  a1: "photo-1486406146926-c627a92ad1ab",
-  a2: "photo-1560518883-ce09059eeffa",
-  p1: "photo-1512917774080-9991f1c4c750",
-  p2: "photo-1582407947304-fd86f028f716",
-  p3: "photo-1600585154340-be6161a56a0c",
-  g1: "photo-1600607687939-ce8a6c25118c",
-  g2: "photo-1564013799919-ab600027ffc6",
-  g3: "photo-1613490493576-7fde63acd811",
-  g4: "photo-1568605114967-8130f3a36994",
-  g5: "photo-1600596542815-ffad4c1539a9",
-  g6: "photo-1600566753190-17f0baa2a6c3",
-  g7: "photo-1600585154340-be6161a56a0c",
-  tl: "photo-1503387762-592deb58ef4e",
-  cta: "photo-1448630360428-65456885c650",
-  n1: "photo-1554995207-c18c203602cb",
-  n2: "photo-1523217582562-09d0def993a6",
+  hero: D("toan-canh-dem"),
+  a1: D("kien-truc"),
+  a2: D("cong-vien-xanh"),
+  p1: D("phoi-canh-ban-ngay"),
+  p2: D("thap-hoang-hon"),
+  p3: D("toa-tm"),
+  g1: D("vuon-yoga"),
+  g2: D("kien-truc"),
+  g3: D("ho-boi"),
+  g4: D("nha-thap-tang"),
+  g5: D("cong-vien-thap"),
+  g6: D("duong-noi-khu"),
+  g7: D("cong-vien-nang"),
+  tl: D("vi-tri-tong-the"),
+  cta: D("toan-canh-dem"),
+  n1: D("phoi-canh-ban-ngay"),
+  n2: D("vi-tri-tong-the"),
+  plan: D("quy-hoach-1-500"),
+  vt1: D("mat-bang-vt1"),
+  apt: D("can-ho-dien-hinh"),
+  night: D("toan-canh-dem"),
+  tn: D("nha-lien-ke"),
 };
 
 const projects: Project[] = [
@@ -66,6 +70,31 @@ const gallery = [
   [P.g7, "Ngoại thất xanh", "g-g"],
 ];
 
+const pillars = [
+  ["Tri ân người giữ bình yên", "Cán bộ, chiến sĩ Công an nhân dân hy sinh thầm lặng vì sự bình yên của Nhân dân. Xây dựng một nơi ở ổn định cho các đồng chí là cách chúng tôi bày tỏ lòng biết ơn bằng hành động cụ thể."],
+  ["An cư để lạc nghiệp", "Nhà ở xã hội diện tích hợp lý, giá phù hợp giúp các gia đình yên tâm công tác, chăm lo con cái và gắn bó lâu dài với địa phương."],
+  ["Doanh nghiệp đồng hành cùng Nhà nước", "Chủ động chia sẻ gánh nặng an sinh xã hội cùng Nhà nước, thực hiện chính sách nhà ở cho lực lượng vũ trang theo đúng pháp luật, minh bạch và đúng tiến độ."],
+  ["Phát triển bền vững", "Quy hoạch nhiều cây xanh, mặt nước, tiện ích cộng đồng; mật độ xây dựng thấp để thế hệ hôm nay và mai sau cùng thụ hưởng môi trường sống lành mạnh."],
+];
+
+const landUse: [string, number, string][] = [
+  ["Đất ở (xã hội + thương mại)", 21630, "m²"],
+  ["Giao thông, bãi đỗ xe", 17100, "m²"],
+  ["Cây xanh, thể dục thể thao", 7633, "m²"],
+  ["Đất giáo dục (trường mầm non)", 3637, "m²"],
+];
+
+const scaleFacts: [string, string][] = [
+  ["Tổng diện tích khu đất", "~50.000 m²"],
+  ["Tổng diện tích sàn xây dựng", "~154.389 m²"],
+  ["Nhà ở xã hội", "1.039 căn · 3 tòa · 20 tầng + 1 hầm"],
+  ["Nhà ở thương mại cao tầng", "179 căn · 15 tầng + 1 hầm"],
+  ["Nhà ở thương mại thấp tầng", "15 căn · 4 tầng"],
+  ["Mật độ xây dựng gộp", "~21,2%"],
+  ["Dân số dự kiến", "~3.714 người"],
+  ["Tổng mức đầu tư", "~2.262,3 tỷ đồng"],
+];
+
 const milestones = [
   ["Q3/2026", "Khởi công Giai đoạn 1", "Hạ tầng + 665 căn NOXH + toàn bộ Tòa TM cao tầng"],
   ["Q4/2028", "Hoàn thành Giai đoạn 1", "Bàn giao cho cán bộ chiến sĩ Công an"],
@@ -81,7 +110,7 @@ const news: Article[] = [
     body: [
       "Theo kế hoạch, Giai đoạn 1 tập trung đầu tư hạ tầng kỹ thuật và xây dựng 665 căn nhà ở xã hội dành cho cán bộ, chiến sĩ lực lượng Công an nhân dân, dự kiến triển khai từ Quý 3/2026.",
       "Minh Phú Hưng Land cam kết tổ chức thi công theo đúng tiến độ, kiểm soát chặt chẽ chất lượng vật liệu, an toàn lao động và vệ sinh môi trường trong suốt quá trình xây dựng.",
-      "Toàn bộ dự án có quy mô hơn 50.000 m², tổng vốn đầu tư khoảng 2.262 tỷ đồng với 1.233 căn hộ, được phát triển theo hai giai đoạn.",
+      "Toàn bộ dự án có quy mô hơn 50.000 m², tổng mức đầu tư khoảng 2.262 tỷ đồng với 1.233 căn hộ, được phát triển theo hai giai đoạn.",
       "Việc khởi công được chuẩn bị qua nhiều bước: hoàn tất thủ tục pháp lý, rà soát thiết kế, lựa chọn nhà thầu có năng lực và lập biện pháp thi công chi tiết. Mỗi hạng mục đều có mốc nghiệm thu rõ ràng để chủ đầu tư và khách hàng cùng theo dõi.",
       "Hạ tầng được ưu tiên triển khai trước gồm đường nội khu, hệ thống cấp thoát nước, điện chiếu sáng và cây xanh cảnh quan. Cách làm này giúp cư dân sớm có môi trường sống hoàn chỉnh ngay khi nhận nhà.",
       "Sau Giai đoạn 1, Giai đoạn 2 (2029–2030) sẽ hoàn thiện 568 căn nhà ở xã hội còn lại cùng 15 căn thấp tầng, khép kín quy hoạch của Khu Đồng Mái. Công ty sẽ thường xuyên cập nhật tiến độ trên website và các kênh liên hệ chính thức.",
@@ -107,15 +136,15 @@ const news: Article[] = [
     img: P.a1, tag: "Sự kiện", read: "3 phút",
     title: "Minh Phú Hưng Land chính thức ra mắt",
     excerpt: "Công ty đặt mục tiêu phát triển nhà ở chất lượng cao tại Phú Thọ.",
-    lead: "Với vốn điều lệ 460 tỷ đồng, Minh Phú Hưng Land bước vào thị trường với khát vọng kiến tạo những khu ở chất lượng, bền vững.",
+    lead: "Minh Phú Hưng Land bước vào thị trường với khát vọng kiến tạo những khu ở chất lượng, bền vững.",
     body: [
       "Lấy tinh thần “Minh bạch – Phú quý – Hưng thịnh” làm kim chỉ nam, công ty hướng đến việc phát triển các dự án nhà ở tại Phú Thọ với pháp lý rõ ràng, thiết kế hiện đại và tiến độ cam kết.",
       "Ban lãnh đạo do ông Vũ Văn Minh (Chủ tịch HĐTV) và ông Lê Đức Thọ (Tổng giám đốc) dẫn dắt, đặt khách hàng và cộng đồng làm trung tâm của mọi quyết định.",
       "Tên gọi Minh Phú Hưng gói trọn ba giá trị: “Minh” là sự sáng suốt và minh bạch; “Phú” là sự thịnh vượng, đủ đầy; “Hưng” là sự phát triển bền vững qua từng giai đoạn. Ba giá trị này được thể hiện xuyên suốt từ cách làm việc đến từng sản phẩm.",
-      "Công ty đặt trụ sở tại phường Vĩnh Phúc, tỉnh Phú Thọ, với đội ngũ nhân sự giàu kinh nghiệm trong đầu tư, thiết kế, thi công và chăm sóc khách hàng. Dự án đầu tiên là Khu Đồng Mái với quy mô 1.233 căn hộ, tổng vốn đầu tư khoảng 2.262 tỷ đồng.",
+      "Công ty đặt trụ sở tại phường Vĩnh Phúc, tỉnh Phú Thọ, với đội ngũ nhân sự giàu kinh nghiệm trong đầu tư, thiết kế, thi công và chăm sóc khách hàng. Dự án đầu tiên là Khu Đồng Mái với quy mô 1.233 căn hộ, tổng mức đầu tư khoảng 2.262 tỷ đồng.",
       "Trong thời gian tới, công ty sẽ tiếp tục hoàn thiện quy trình quản trị, nâng cao chất lượng dịch vụ và mở rộng hợp tác để mang lại nhiều giá trị hơn cho khách hàng, đối tác và địa phương.",
     ],
-    points: ["Vốn điều lệ 460 tỷ đồng", "Định hướng phát triển nhà ở chất lượng cao", "Giá trị cốt lõi: Minh bạch · Phú quý · Hưng thịnh"],
+    points: ["Dự án đầu tiên: Khu Đồng Mái, Phú Thọ", "Định hướng phát triển nhà ở chất lượng cao", "Giá trị cốt lõi: Minh bạch · Phú quý · Hưng thịnh"],
   },
   {
     img: P.g2, tag: "Thiết kế", read: "4 phút",
@@ -185,7 +214,7 @@ export default function Home() {
 
       <main>
         <section className="hero" id="home">
-          <div className="hero-bg" id="heroBg" style={{ backgroundImage: `url(${img(P.hero, 2000)})` }} />
+          <div className="hero-bg" id="heroBg" style={{ backgroundImage: `url(${P.hero})` }} />
           <div className="hero-shade" />
           <canvas className="sparkles" id="sparkles" aria-hidden="true" />
           <div className="container hero-inner">
@@ -203,9 +232,9 @@ export default function Home() {
           </div>
           <div className="container stats-wrap">
             <div className="stats">
-              <div><b data-count="460">460</b><small>tỷ</small><span>Vốn điều lệ</span></div>
               <div><b data-count="1233">1.233</b><span>Căn hộ</span></div>
-              <div><b data-count="2262">2.262</b><small>tỷ</small><span>Tổng đầu tư</span></div>
+              <div><b data-count="2262">2.262</b><small>tỷ</small><span>Tổng mức đầu tư</span></div>
+              <div><b data-count="20">20</b><small>tầng</small><span>Nhà cao tầng</span></div>
               <div><b data-count="50000">50.000</b><small>m²</small><span>Quy mô đất</span></div>
             </div>
           </div>
@@ -214,8 +243,8 @@ export default function Home() {
         <section className="section" id="about">
           <div className="container grid2">
             <div className="collage reveal">
-              <img className="c1" data-speed="0.05" src={img(P.a1, 900)} alt="Công trình hiện đại" loading="lazy" />
-              <img className="c2" data-speed="-0.08" src={img(P.a2, 700)} alt="Không gian sống" loading="lazy" />
+              <img className="c1" data-speed="0.05" src={P.a1} alt="Công trình hiện đại" loading="lazy" />
+              <img className="c2" data-speed="-0.08" src={P.a2} alt="Không gian sống" loading="lazy" />
               <div className="badge"><b>2026</b><span>Năm thành lập</span></div>
             </div>
             <div className="reveal">
@@ -229,6 +258,32 @@ export default function Home() {
                 ))}
               </dl>
             </div>
+          </div>
+        </section>
+
+        <section className="section philo" id="philosophy">
+          <div className="container">
+            <div className="head">
+              <p className="eyebrow light">Triết lý phát triển</p>
+              <h2>Xây nhà cho người giữ bình yên</h2>
+              <p>Phát triển bất động sản gắn liền với trách nhiệm xã hội</p>
+            </div>
+            <blockquote className="philo-quote reveal">
+              <span className="diamond" aria-hidden="true" />
+              Với Minh Phú Hưng, mỗi ngôi nhà không chỉ là công trình – đó là lời tri ân và là cam kết trách nhiệm của doanh nghiệp đối với những người ngày đêm gìn giữ sự bình yên cho Tổ quốc.
+            </blockquote>
+            <div className="cards four">
+              {pillars.map(([t, d], i) => (
+                <div className="philo-card reveal" key={t}>
+                  <em>0{i + 1}</em>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="philo-why reveal">
+              <b>Vì sao chúng tôi chọn xây dựng nhà ở cho lực lượng vũ trang?</b> Bởi chúng tôi tin rằng một doanh nghiệp bền vững là doanh nghiệp biết đặt giá trị cộng đồng lên trước lợi ích ngắn hạn: khi người chiến sĩ có một mái ấm ổn định, xã hội có thêm một nền tảng vững vàng cho an ninh và phát triển.
+            </p>
           </div>
         </section>
 
@@ -252,6 +307,32 @@ export default function Home() {
               <p className="muted">Nhà ở LLVT Công an tại Phường Vĩnh Phúc, Phú Thọ<br />~2.262,3 tỷ đồng · 50.000 m² · 1.233 căn hộ</p>
             </div>
             <ProjectCards projects={projects} />
+            <div className="overview">
+              <div className="ov-plan reveal">
+                <img src={P.plan} alt="Quy hoạch chi tiết tỷ lệ 1/500 Khu Đồng Mái" loading="lazy" />
+                <span>Quy hoạch chi tiết tỷ lệ 1/500</span>
+              </div>
+              <div className="ov-info reveal">
+                <h3>Quy mô &amp; cơ cấu sử dụng đất</h3>
+                <ul className="bars">
+                  {landUse.map(([k, v]) => (
+                    <li key={k}>
+                      <div><span>{k}</span><b>{v.toLocaleString("vi-VN")} m²</b></div>
+                      <i style={{ width: `${(v / 21630) * 100}%` }} />
+                    </li>
+                  ))}
+                </ul>
+                <dl className="profile">
+                  {scaleFacts.map(([k, v]) => (
+                    <div key={k}><dt>{k}</dt><dd>{v}</dd></div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+            <div className="plans">
+              <figure className="reveal"><img src={P.vt1} alt="Mặt bằng tầng điển hình Tòa VT1" loading="lazy" /><figcaption>Mặt bằng tầng điển hình – Tòa VT1</figcaption></figure>
+              <figure className="reveal"><img src={P.apt} alt="Căn hộ điển hình nhà ở xã hội" loading="lazy" /><figcaption>Căn hộ điển hình – 70 m²</figcaption></figure>
+            </div>
           </div>
         </section>
 
@@ -277,7 +358,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section navy bgimg" id="timeline" style={{ backgroundImage: `linear-gradient(rgba(12,30,53,.9),rgba(12,30,53,.94)),url(${img(P.tl, 1800)})` }}>
+        <section className="section navy bgimg" id="timeline" style={{ backgroundImage: `linear-gradient(rgba(12,30,53,.9),rgba(12,30,53,.94)),url(${P.tl})` }}>
           <div className="container">
             <div className="head">
               <p className="eyebrow light">Tiến độ</p>
@@ -303,7 +384,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="cta" style={{ backgroundImage: `linear-gradient(rgba(12,30,53,.72),rgba(12,30,53,.8)),url(${img(P.cta, 1800)})` }}>
+        <section className="cta" style={{ backgroundImage: `linear-gradient(rgba(12,30,53,.72),rgba(12,30,53,.8)),url(${P.cta})` }}>
           <div className="container reveal">
             <h2>Ngôi nhà mơ ước <em>bắt đầu từ chữ Tín</em></h2>
             <a href="#contact" className="btn">Đăng ký tư vấn <Icon name="arrow" size={18} /></a>
@@ -351,7 +432,7 @@ export default function Home() {
         </div>
         <div className="container copy">
           <span>© 2026 Công ty TNHH Đầu tư BĐS Minh Phú Hưng. Bảo lưu mọi quyền.</span>
-          <span>GCNĐKDN: 2500783313 · Vốn điều lệ 460 tỷ đồng</span>
+          <span>GCNĐKDN: 2500783313</span>
         </div>
       </footer>
     </>
