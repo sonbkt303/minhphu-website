@@ -21,7 +21,7 @@ const profile: [string, React.ReactNode][] = [
 
 const D = (n: string) => `/du-an/${n}.jpg`;
 const P = {
-  hero: D("toan-canh-dem"),
+  hero: D("phoi-canh-ban-ngay"),
   a1: D("kien-truc"),
   a2: D("cong-vien-xanh"),
   p1: D("phoi-canh-ban-ngay"),
@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     cover: P.p3, title: "Tòa TM", kind: "Nhà ở thương mại", desc: "179 căn · 74–123m²", tag: "Mở bán",
-    album: [[P.p3, "Phối cảnh tổng thể"], [P.g4, "Nhà thấp tầng"], [P.g3, "Không gian sống"], [P.g5, "Nội thất tinh tế"], [P.g2, "Kiến trúc hiện đại"], [P.hero, "Toàn cảnh khu đô thị"]],
+    album: [[P.p3, "Phối cảnh tổng thể"], [P.g4, "Nhà thấp tầng"], [P.g3, "Không gian sống"], [P.g5, "Nội thất tinh tế"], [P.g2, "Kiến trúc hiện đại"], [P.night, "Toàn cảnh khu đô thị về đêm"]],
   },
 ];
 
@@ -240,11 +240,7 @@ export default function Home() {
           <canvas className="sparkles" id="sparkles" aria-hidden="true" />
           <div className="container hero-inner">
             <p className="eyebrow light line-in">Tầm nhìn sáng suốt – Giá trị thịnh vượng – Phát triển trường tồn</p>
-            <h1>
-              <Words text="Kiến tạo không gian" start={0} />
-              <br />
-              <em><Words text="sống thanh thoát" start={3} /></em>
-            </h1>
+            <h1 className="sr-only">Minh Phú Hưng — Chủ đầu tư nhà ở lực lượng vũ trang tại Phú Thọ</h1>
             <p className="lead line-in">Chủ đầu tư dự án nhà ở lực lượng vũ trang Công an nhân dân tại Phú Thọ — nơi chất lượng sống được nâng tầm mỗi ngày.</p>
             <div className="line-in">
               <a href="#projects" className="btn">Khám phá dự án</a>

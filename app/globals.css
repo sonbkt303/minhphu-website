@@ -421,3 +421,23 @@ h2{background:linear-gradient(100deg,var(--navy) 40%,var(--navy-light));-webkit-
 .cv-item b{display:block;color:#15305C;font:600 1.2rem var(--display);margin-bottom:.4rem}
 .cv-item p{font-size:.88rem;line-height:1.6;color:#4a5568}
 @media(max-width:1000px){.vm{grid-template-columns:1fr}.cv{grid-template-columns:repeat(2,1fr)}.mph{grid-template-columns:1fr}}
+
+/* Bright hero (daytime render) */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero-bg{filter:brightness(1.05) saturate(1.1)}
+.hero-shade{background:linear-gradient(100deg,rgba(15,50,70,.55) 0%,rgba(15,50,70,.22) 50%,rgba(15,50,70,0) 80%),linear-gradient(0deg,rgba(15,40,60,.35),transparent 35%)}
+.hero .lead{text-shadow:0 2px 14px rgba(8,30,50,.6)}
+.hero-inner{padding-top:12rem}
+
+/* Philosophy: light ivory like the Định hướng section */
+.philo{background:radial-gradient(90% 60% at 80% 0%,rgba(232,207,133,.28),transparent 60%),linear-gradient(180deg,#FFFDF8 0%,#F6EEDB 100%);color:var(--text)}
+.philo h2{-webkit-text-fill-color:var(--navy-mid);color:var(--navy-mid)}
+.philo .head p:not(.eyebrow){color:#8a6a22}
+.philo-quote{color:var(--navy-mid)}
+.philo-card{background:#fff;border:1px solid rgba(184,146,58,.4);box-shadow:0 12px 32px rgba(21,48,92,.08);border-top:3px solid var(--gold)}
+.philo-card:hover{background:#fff;border-color:var(--gold);box-shadow:0 18px 40px rgba(21,48,92,.14)}
+.philo-card h3{color:var(--navy-mid)}
+.philo-card p{color:#4a5568}
+.mph-card h3 small,.mph-card strong{color:#8a6a22}
+.philo-why{color:#3a4558;border-top-color:rgba(184,146,58,.4)}
+.philo-why b{color:#8a6a22}
