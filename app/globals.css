@@ -339,6 +339,8 @@ h2{background:linear-gradient(100deg,var(--navy) 40%,var(--navy-light));-webkit-
 .nav.scrolled .brand-img{height:38px}
 .footer .brand-img{height:54px}
 .btn{background:var(--gold-grad);color:#0B1F3F;letter-spacing:.04em}
+.btn-ghost{background:transparent;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
 .eyebrow{color:#A07C2C}
 .eyebrow.light{color:var(--gold-light)}
 .soft{background:linear-gradient(180deg,#FBF7EE,#F5EDDC)}
