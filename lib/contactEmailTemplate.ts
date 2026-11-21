@@ -5,6 +5,7 @@ export type ContactLead = {
   msg: string;
 };
 
+
 const SITE = "Minh Phú Hưng Land";
 const PROJECT = "Khu Đồng Mái";
 const HOTLINE = "0988056886";
