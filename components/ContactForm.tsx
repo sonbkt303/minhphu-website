@@ -1,18 +1,11 @@
 "use client";
 
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { buildWeb3FormsPayload } from "@/lib/contactEmailTemplate";
 
-const WEB3FORMS_URL = "https://api.web3forms.com/submit";
+const CONTACT_API = "/api/contact";
 const PHONE_RE = /^\+?[0-9][0-9\s]{8,14}$/;
 
-function resolveKey(propKey?: string) {
-  const fromProp = propKey?.trim() ?? "";
-  if (fromProp) return fromProp;
-  return process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim() ?? "";
-}
-
-export default function ContactForm({ web3formsAccessKey = "" }: { web3formsAccessKey?: string }) {
+export default function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [note, setNote] = useState("");
   const [loading, setLoading] = useState(false);
@@ -46,42 +39,26 @@ export default function ContactForm({ web3formsAccessKey = "" }: { web3formsAcce
       return;
     }
 
-    const key = resolveKey(web3formsAccessKey);
-    if (!key) {
-      if (process.env.NODE_ENV === "development") {
-        setNote("");
-        setLoading(true);
-        await new Promise((r) => setTimeout(r, 700));
-        formRef.current?.reset();
-        setSuccessOpen(true);
-        setLoading(false);
-        return;
-      }
-      setNote(
-        "Form chưa được cấu hình. Vui lòng gọi hotline 0988056886 hoặc email congtyminhphuhung@gmail.com.",
-      );
-      return;
-    }
-
     setNote("");
     setLoading(true);
 
     try {
-      const res = await fetch(WEB3FORMS_URL, {
+      const res = await fetch(CONTACT_API, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(buildWeb3FormsPayload(key, { name, phone, email, msg })),
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          msg,
+          botcheck: Boolean(d.get("botcheck")),
+        }),
       });
 
-      const data = (await res.json()) as {
-        success?: boolean;
-        message?: string;
-        body?: { message?: string };
-      };
+      const data = (await res.json()) as { success?: boolean; message?: string };
 
       if (!res.ok || !data.success) {
-        const detail = data.body?.message ?? data.message;
-        setNote(detail ?? "Không gửi được yêu cầu. Vui lòng thử lại hoặc gọi hotline 0988056886.");
+        setNote(data.message ?? "Không gửi được yêu cầu. Vui lòng thử lại hoặc gọi hotline 0988056886.");
         return;
       }
 

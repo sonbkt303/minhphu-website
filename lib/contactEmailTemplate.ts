@@ -25,10 +25,7 @@ export function buildContactSubject(name: string) {
   return `Khách tư vấn: ${name} · ${PROJECT}`;
 }
 
-/**
- * Một khối nội dung duy nhất — tránh trùng với bảng field mặc định của Web3Forms.
- * Plain text, hiển thị ổn trên Gmail / Outlook.
- */
+/** Nội dung email (plain text) gửi qua Resend. */
 export function buildContactMessage(lead: ContactLead) {
   const email = lead.email.trim() || "Chưa cung cấp";
   const note = lead.msg.trim() || "Khách không ghi thêm nội dung.";
@@ -47,18 +44,4 @@ export function buildContactMessage(lead: ContactLead) {
     `Thời gian: ${formatSubmittedAt()}`,
     "Nguồn: Form liên hệ trên website",
   ].join("\n");
-}
-
-export function buildWeb3FormsPayload(key: string, lead: ContactLead) {
-  const email = lead.email.trim();
-
-  return {
-    access_key: key,
-    subject: buildContactSubject(lead.name),
-    from_name: SITE,
-    email: email || undefined,
-    replyto: email || undefined,
-    message: buildContactMessage(lead),
-    botcheck: false as const,
-  };
 }
