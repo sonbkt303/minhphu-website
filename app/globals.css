@@ -147,7 +147,18 @@ input,textarea{width:100%;padding:1rem 1.2rem;background:var(--ivory);border:1px
 input:focus,textarea:focus{outline:0;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(184,146,58,.15)}
 ::placeholder{color:#9aa3b0}
 .note{font-size:.9rem;color:var(--gold)}
+.note.err{color:#b54545}
 form .btn{justify-content:center}
+form .btn:disabled{opacity:.88;cursor:not-allowed;transform:none;box-shadow:none}
+form input:disabled,form textarea:disabled{opacity:.7;cursor:not-allowed}
+.spin{width:1.1rem;height:1.1rem;border:2px solid rgba(11,31,63,.22);border-top-color:var(--navy);border-radius:50%;animation:cfspin .65s linear infinite;flex:none}
+@keyframes cfspin{to{transform:rotate(360deg)}}
+.cf-success{width:min(460px,100%);text-align:center}
+.cf-success-body{padding:2.6rem 2rem 2.2rem}
+.cf-success-ico{width:68px;height:68px;margin:0 auto 1.1rem;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#fbf3dd,#f0dfae);color:var(--gold);font-size:1.75rem;font-weight:700;line-height:1}
+.cf-success h3{font-size:1.65rem;margin-bottom:.75rem}
+.cf-success p{color:var(--muted);margin-bottom:1.6rem;line-height:1.75}
+.cf-success .btn{min-width:10rem;justify-content:center}
 .map{width:100%;height:520px;border:0;border-radius:24px;box-shadow:0 24px 60px rgba(11,31,63,.15)}
 
 /* Footer */
