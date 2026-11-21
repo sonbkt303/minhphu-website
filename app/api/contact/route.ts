@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import {
+  buildContactHtml,
   buildContactMessage,
   buildContactSubject,
   type ContactLead,
@@ -104,6 +105,7 @@ export async function POST(req: Request) {
     replyTo,
     subject: buildContactSubject(lead.name),
     text: buildContactMessage(lead),
+    html: buildContactHtml(lead),
   });
 
   if (error) {
