@@ -465,7 +465,13 @@ export default function Home() {
                 <li><Icon name="mail" size={20} /><a href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a></li>
                 <li><Icon name="pin" size={20} />TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ</li>
               </ul>
-              <ContactForm />
+              <ContactForm
+                web3formsAccessKey={
+                  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim() ||
+                  process.env.WEB3FORMS_ACCESS_KEY?.trim() ||
+                  ""
+                }
+              />
             </div>
             <div className="reveal">
               <iframe

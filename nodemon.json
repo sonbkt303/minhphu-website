@@ -1,5 +1,5 @@
 {
-  "watch": ["app", "components", "public", "next.config.ts", "tsconfig.json", "package.json"],
+  "watch": ["app", "components", "public", "next.config.ts", "tsconfig.json", "package.json", ".env.local", ".env"],
   "ext": "ts,tsx,css,json,svg",
   "ignore": ["node_modules", ".next"],
   "exec": "next dev",
