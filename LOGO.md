@@ -20,6 +20,6 @@ Xem thư mục `logo-options/` (7 phong cách, kèm giải thích trong `logo-op
 
 ## Tệp liên quan
 - Component: `components/Logo.tsx` (dùng ở thanh điều hướng và footer)
-- Favicon: `app/icon.svg`
+- Favicon: `app/icon.png` — emblem trái của `public/logo/ngang-navy.png` (chữ navy đậm + viền vàng, nền trong suốt; dễ đọc ở kích thước 16–32px)
 
 Trên website, mặt trời có hiệu ứng "thở" nhẹ và các tia sáng xoay chậm (tắt khi người dùng chọn giảm chuyển động).
