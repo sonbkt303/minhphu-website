@@ -7,9 +7,9 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "dev:next": "next dev",
+    "dev:next": "next dev -p 6100",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 6100"
   },
   "dependencies": {
     "next": "^15.0.0",

@@ -2,7 +2,7 @@
   "watch": ["app", "components", "public", "next.config.ts", "tsconfig.json", "package.json", ".env.local", ".env"],
   "ext": "ts,tsx,css,json,svg",
   "ignore": ["node_modules", ".next"],
-  "exec": "next dev",
+  "exec": "next dev -p 6100",
   "delay": 300,
   "signal": "SIGTERM"
 }

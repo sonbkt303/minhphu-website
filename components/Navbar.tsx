@@ -33,7 +33,7 @@ export default function Navbar() {
         {links.map(([href, label]) => (
           <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
         ))}
-        <a href="#contact" className="btn btn-sm" onClick={() => setOpen(false)}>Liên hệ</a>
+        <a href="#contact" className="btn btn-sm" onClick={() => setOpen(false)}>Nhận tư vấn</a>
       </nav>
     </header>
   );

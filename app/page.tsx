@@ -239,7 +239,6 @@ export default function Home() {
           <div className="hero-shade" />
           <canvas className="sparkles" id="sparkles" aria-hidden="true" />
           <div className="container hero-inner">
-            <p className="eyebrow light line-in">Tầm nhìn sáng suốt – Giá trị thịnh vượng – Phát triển trường tồn</p>
             <h1 className="sr-only">Minh Phú Hưng — Chủ đầu tư nhà ở lực lượng vũ trang tại Phú Thọ</h1>
             <p className="lead line-in">Chủ đầu tư dự án nhà ở lực lượng vũ trang Công an nhân dân tại Phú Thọ — nơi chất lượng sống được nâng tầm mỗi ngày.</p>
             <div className="line-in">
