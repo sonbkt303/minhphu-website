@@ -68,7 +68,7 @@ const gallery = [
 ];
 
 const pillars = [
-  ["Tri ân người giữ bình yên", "Cán bộ, chiến sĩ Công an nhân dân hy sinh thầm lặng vì sự bình yên của Nhân dân. Xây dựng một nơi ở ổn định cho các đồng chí là cách chúng tôi bày tỏ lòng biết ơn bằng hành động cụ thể."],
+  ["Tri ân người giữ bình yên", "Lực lượng vũ trang Công an nhân dân hy sinh thầm lặng vì sự bình yên của Nhân dân. Xây dựng một nơi ở ổn định cho các đồng chí là cách chúng tôi bày tỏ lòng biết ơn bằng hành động cụ thể."],
   ["An cư để lạc nghiệp", "Nhà ở xã hội diện tích hợp lý, giá phù hợp giúp các gia đình yên tâm công tác, chăm lo con cái và gắn bó lâu dài với địa phương."],
   ["Doanh nghiệp đồng hành cùng Nhà nước", "Chủ động chia sẻ gánh nặng an sinh xã hội cùng Nhà nước, thực hiện chính sách nhà ở cho lực lượng vũ trang theo đúng pháp luật, minh bạch và đúng tiến độ."],
   ["Phát triển bền vững", "Quy hoạch nhiều cây xanh, mặt nước, tiện ích cộng đồng; mật độ xây dựng thấp để thế hệ hôm nay và mai sau cùng thụ hưởng môi trường sống lành mạnh."],
@@ -136,9 +136,10 @@ const news: Article[] = [
   {
     img: P.n1, tag: "Tin dự án", read: "4 phút",
     title: "Khởi công Giai đoạn 1 dự án Khu Đồng Mái",
-    excerpt: "Kế hoạch Giai đoạn 1: bồi thường GPMB, HTKT toàn khu, ≈700 căn NOXH và Tòa TM từ Q3/2026.",
+    excerpt: "Quỹ căn GĐ1: ≈700 căn NOXH + 179 căn TM; NOXH dành cho lực lượng vũ trang Công an nhân dân, triển khai từ Q3/2026.",
     lead: "Giai đoạn 1 của dự án Khu Đồng Mái được xác định là bước khởi đầu quan trọng, tạo nền tảng hạ tầng đồng bộ cho toàn bộ khu đô thị.",
     body: [
+      "Giai đoạn 1 tập trung hoàn thiện hạ tầng kỹ thuật toàn khu và xây dựng quỹ căn Giai đoạn 1 gồm khoảng 700 căn nhà ở xã hội (tòa 1, 2; 20 tầng nổi, 01 tầng hầm) và 179 căn nhà ở thương mại cao tầng. Nhà ở xã hội dành cho lực lượng vũ trang Công an nhân dân theo quy định; dự kiến triển khai từ Quý III/2026.",
       "Theo kế hoạch, Giai đoạn 1 (Quý III/2026 – Quý IV/2028) thực hiện bồi thường, giải phóng mặt bằng, hoàn thiện hạ tầng kỹ thuật toàn khu, xây dựng khoảng 700 căn nhà ở xã hội (tòa 1, 2; 20 tầng nổi, 01 tầng hầm) và 179 căn nhà ở thương mại cao tầng kèm khối đế thương mại 2 tầng.",
       "Minh Phú Hưng Land cam kết tổ chức thi công theo đúng tiến độ, kiểm soát chặt chẽ chất lượng vật liệu, an toàn lao động và vệ sinh môi trường trong suốt quá trình xây dựng.",
       "Toàn bộ dự án có quy mô hơn 50.000 m², tổng mức đầu tư khoảng 2.262 tỷ đồng với 1.233 căn hộ, được phát triển theo hai giai đoạn.",
@@ -146,7 +147,7 @@ const news: Article[] = [
       "Hạ tầng được ưu tiên triển khai trước gồm đường nội khu, hệ thống cấp thoát nước, điện chiếu sáng và cây xanh cảnh quan. Cách làm này giúp cư dân sớm có môi trường sống hoàn chỉnh ngay khi nhận nhà.",
       "Giai đoạn 2 triển khai khoảng 339 căn nhà ở xã hội (tòa 3), 15 căn nhà ở thương mại thấp tầng (4 tầng) và trường mầm non MN-01 (3 tầng, 186 cháu), khởi công khi Bộ Công an có nhu cầu cụ thể và hoàn thành sau 02 năm. Công ty sẽ cập nhật tiến độ trên website và các kênh liên hệ chính thức.",
     ],
-    points: ["≈700 căn NOXH và 179 căn TM trong Giai đoạn 1", "Bồi thường GPMB và HTKT toàn khu", "Cam kết tiến độ và chất lượng công trình"],
+    points: ["Quỹ căn GĐ1: ≈700 căn NOXH + 179 căn TM", "NOXH: lực lượng vũ trang Công an nhân dân", "Bồi thường GPMB, HTKT và cam kết tiến độ"],
   },
   {
     img: P.n2, tag: "Pháp lý", read: "4 phút",
@@ -214,7 +215,7 @@ const news: Article[] = [
       "Minh Phú Hưng Land chú trọng các hoạt động kết nối cư dân, vận hành chuyên nghiệp và chăm sóc khách hàng sau bàn giao.",
       "Mục tiêu là mang đến cho mỗi gia đình một tổ ấm bình yên, nơi các thế hệ cùng phát triển.",
       "Các hoạt động như ngày hội gia đình, chương trình thiện nguyện và sinh hoạt câu lạc bộ sẽ được tổ chức định kỳ, giúp cư dân làm quen và gắn bó với nhau.",
-      "Với đối tượng chính là cán bộ, chiến sĩ lực lượng Công an nhân dân và gia đình, khu ở mang tinh thần kỷ cương, đoàn kết và tương trợ. Đó là nền tảng cho một cộng đồng văn minh, an toàn.",
+      "Với đối tượng chính là lực lượng vũ trang Công an nhân dân và gia đình, khu ở mang tinh thần kỷ cương, đoàn kết và tương trợ. Đó là nền tảng cho một cộng đồng văn minh, an toàn.",
       "Sau bàn giao, bộ phận chăm sóc khách hàng tiếp tục tiếp nhận góp ý và hỗ trợ bảo hành, để mỗi cư dân luôn cảm nhận được sự đồng hành lâu dài của chủ đầu tư.",
     ],
     points: ["Vận hành và quản lý chuyên nghiệp", "Chăm sóc khách hàng sau bàn giao", "Môi trường sống an toàn, thân thiện"],
@@ -277,7 +278,7 @@ export default function Home() {
               <p className="eyebrow">Giới thiệu</p>
               <h2>Về chúng tôi</h2>
               <h3>Công ty TNHH Đầu tư BĐS Minh Phú Hưng</h3>
-              <p className="muted">Được thành lập với tầm nhìn phát triển nhà ở chất lượng cao cho cán bộ chiến sĩ Công an nhân dân, chúng tôi cam kết mang lại không gian sống tiêu chuẩn, bền vững tại Phú Thọ.</p>
+              <p className="muted">Được thành lập với tầm nhìn phát triển nhà ở chất lượng cao cho lực lượng vũ trang Công an nhân dân, chúng tôi cam kết mang lại không gian sống tiêu chuẩn, bền vững tại Phú Thọ.</p>
               <dl className="profile">
                 {profile.map(([k, v]) => (
                   <div key={k}><dt>{k}</dt><dd>{v}</dd></div>
@@ -493,7 +494,7 @@ export default function Home() {
         <div className="container fgrid">
           <div>
             <Logo tone="light" />
-            <p>Chủ đầu tư các dự án nhà ở dành cho cán bộ, chiến sĩ Công an nhân dân tại Phú Thọ, cam kết minh bạch, chất lượng và đúng tiến độ.</p>
+            <p>Chủ đầu tư các dự án nhà ở dành cho lực lượng vũ trang Công an nhân dân tại Phú Thọ, cam kết minh bạch, chất lượng và đúng tiến độ.</p>
           </div>
           <div><h4>Dự án</h4><a href="#projects">Khu Đồng Mái</a><a href="#projects">Nhà ở XH</a><a href="#projects">Nhà ở TM</a></div>
           <LegalLinks />
