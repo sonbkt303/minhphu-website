@@ -43,8 +43,8 @@ const items: Item[] = [
     ],
     points: [
       "Tổng mức đầu tư khoảng 2.262 tỷ đồng cho toàn bộ dự án.",
-      "Giai đoạn 1 (Q3/2026 – Q4/2028): hạ tầng, 665 căn nhà ở xã hội và khối thương mại cao tầng.",
-      "Giai đoạn 2: 568 căn nhà ở xã hội còn lại và 15 căn thấp tầng.",
+      "Giai đoạn 1 (Q3/2026 – Q4/2028): bồi thường GPMB, HTKT toàn khu, ≈700 căn NOXH (tòa 1, 2) và 179 căn TM cao tầng.",
+      "Giai đoạn 2: ≈339 căn NOXH (tòa 3), 15 căn thấp tầng, trường MN-01 — khởi công theo nhu cầu Bộ Công an, hoàn thành sau 2 năm.",
       "Tiến độ và chất lượng được kiểm soát theo từng mốc nghiệm thu.",
     ],
     proof: "Lộ trình rõ ràng giúp khách hàng yên tâm về tiến độ bàn giao và quyền lợi.",
@@ -74,7 +74,7 @@ const items: Item[] = [
     lead: "Chúng tôi cam kết tiến độ bằng lộ trình rõ ràng, giám sát chặt chẽ và cập nhật thường xuyên đến khách hàng.",
     facts: [
       ["Giai đoạn 1", "Hoàn thành Q4/2028"],
-      ["Lộ trình", "2026 – 2030"],
+      ["Lộ trình", "GĐ1: Q3/2026 – Q4/2028"],
       ["Cập nhật", "Định kỳ hằng quý"],
     ],
     points: [

@@ -45,15 +45,15 @@ const P = {
 
 const projects: Project[] = [
   {
-    cover: P.p1, title: "Tòa VT1", kind: "Nhà ở xã hội", desc: "247 căn · 70m² · 20 tầng", tag: "Đang triển khai",
+    cover: P.p1, title: "Tòa VT1", kind: "Nhà ở xã hội · Tòa 1", desc: "Giai đoạn 1 · 20 tầng nổi · 1 tầng hầm", tag: "Đang triển khai",
     album: [[P.p1, "Phối cảnh tổng thể"], [P.g2, "Kiến trúc hiện đại"], [P.g1, "Phòng khách"], [P.g5, "Nội thất tinh tế"], [P.a1, "Mặt đứng tòa nhà"], [P.g6, "Căn hộ mẫu"]],
   },
   {
-    cover: P.p2, title: "Tòa VT2", kind: "Nhà ở xã hội", desc: "418 căn · 70m² · 20 tầng", tag: "Đang triển khai",
+    cover: P.p2, title: "Tòa VT2", kind: "Nhà ở xã hội · Tòa 2", desc: "Giai đoạn 1 · ≈700 căn (tòa 1 & 2) · 20 tầng + 1 hầm", tag: "Đang triển khai",
     album: [[P.p2, "Phối cảnh tổng thể"], [P.a1, "Mặt đứng tòa nhà"], [P.g3, "Không gian sống"], [P.g6, "Căn hộ mẫu"], [P.g1, "Phòng khách"], [P.a2, "Tiện ích nội khu"]],
   },
   {
-    cover: P.p3, title: "Tòa TM", kind: "Nhà ở thương mại", desc: "179 căn · 74–123m²", tag: "Mở bán",
+    cover: P.p3, title: "Tòa TM", kind: "Nhà ở thương mại cao tầng", desc: "179 căn · 15 tầng nổi · 1 hầm · đế TM 2 tầng", tag: "Giai đoạn 1",
     album: [[P.p3, "Phối cảnh tổng thể"], [P.g4, "Nhà thấp tầng"], [P.g3, "Không gian sống"], [P.g5, "Nội thất tinh tế"], [P.g2, "Kiến trúc hiện đại"], [P.night, "Toàn cảnh khu đô thị về đêm"]],
   },
 ];
@@ -106,35 +106,36 @@ const landUse: [string, number, string][] = [
 const scaleFacts: [string, string][] = [
   ["Tổng diện tích khu đất", "~50.000 m²"],
   ["Tổng diện tích sàn xây dựng", "~154.389 m²"],
-  ["Nhà ở xã hội", "1.039 căn · 3 tòa · 20 tầng + 1 hầm"],
-  ["Nhà ở thương mại cao tầng", "179 căn · 15 tầng + 1 hầm"],
-  ["Nhà ở thương mại thấp tầng", "15 căn · 4 tầng"],
+  ["Nhà ở xã hội", "≈1.039 căn · 3 tòa · ≈700 căn GĐ1 (tòa 1, 2) · ≈339 căn GĐ2 (tòa 3)"],
+  ["Nhà ở thương mại cao tầng", "179 căn · 15 tầng nổi · 1 hầm · khối đế TM 2 tầng (GĐ1)"],
+  ["Nhà ở thương mại thấp tầng", "15 căn · 4 tầng (GĐ2)"],
+  ["Trường mầm non MN-01", "3 tầng · quy mô 186 cháu (GĐ2)"],
   ["Mật độ xây dựng gộp", "~21,2%"],
   ["Dân số dự kiến", "~3.714 người"],
   ["Tổng mức đầu tư", "~2.262,3 tỷ đồng"],
 ];
 
 const milestones = [
-  ["Q3/2026", "Khởi công Giai đoạn 1", "Hạ tầng + 665 căn NOXH + toàn bộ Tòa TM cao tầng"],
-  ["Q4/2028", "Hoàn thành Giai đoạn 1", "Bàn giao cho cán bộ chiến sĩ Công an"],
-  ["2029–2030", "Giai đoạn 2", "568 căn NOXH còn lại + 15 căn thấp tầng"],
+  ["Q3/2026 – Q4/2028", "Giai đoạn 1", "Bồi thường, GPMB; HTKT toàn khu · ≈700 căn NOXH (tòa 1, 2; 20 tầng nổi, 1 hầm) · 179 căn TM cao tầng (15 tầng nổi, 1 hầm, đế TM 2 tầng)"],
+  ["Q4/2028", "Hoàn thành Giai đoạn 1", "Bàn giao các hạng mục Giai đoạn 1 theo quy hoạch"],
+  ["Theo nhu cầu BCA", "Giai đoạn 2", "≈339 căn NOXH (tòa 3) · 15 căn thấp tầng (4 tầng) · Trường MN-01 (3 tầng, 186 cháu). Khởi công khi Bộ Công an có nhu cầu cụ thể; hoàn thành sau 02 năm"],
 ];
 
 const news: Article[] = [
   {
     img: P.n1, tag: "Tin dự án", read: "4 phút",
     title: "Khởi công Giai đoạn 1 dự án Khu Đồng Mái",
-    excerpt: "Kế hoạch triển khai hạ tầng và 665 căn nhà ở xã hội dự kiến từ Q3/2026.",
+    excerpt: "Kế hoạch Giai đoạn 1: bồi thường GPMB, HTKT toàn khu, ≈700 căn NOXH và Tòa TM từ Q3/2026.",
     lead: "Giai đoạn 1 của dự án Khu Đồng Mái được xác định là bước khởi đầu quan trọng, tạo nền tảng hạ tầng đồng bộ cho toàn bộ khu đô thị.",
     body: [
-      "Theo kế hoạch, Giai đoạn 1 tập trung đầu tư hạ tầng kỹ thuật và xây dựng 665 căn nhà ở xã hội dành cho cán bộ, chiến sĩ lực lượng Công an nhân dân, dự kiến triển khai từ Quý 3/2026.",
+      "Theo kế hoạch, Giai đoạn 1 (Quý III/2026 – Quý IV/2028) thực hiện bồi thường, giải phóng mặt bằng, hoàn thiện hạ tầng kỹ thuật toàn khu, xây dựng khoảng 700 căn nhà ở xã hội (tòa 1, 2; 20 tầng nổi, 01 tầng hầm) và 179 căn nhà ở thương mại cao tầng kèm khối đế thương mại 2 tầng.",
       "Minh Phú Hưng Land cam kết tổ chức thi công theo đúng tiến độ, kiểm soát chặt chẽ chất lượng vật liệu, an toàn lao động và vệ sinh môi trường trong suốt quá trình xây dựng.",
       "Toàn bộ dự án có quy mô hơn 50.000 m², tổng mức đầu tư khoảng 2.262 tỷ đồng với 1.233 căn hộ, được phát triển theo hai giai đoạn.",
       "Việc khởi công được chuẩn bị qua nhiều bước: hoàn tất thủ tục pháp lý, rà soát thiết kế, lựa chọn nhà thầu có năng lực và lập biện pháp thi công chi tiết. Mỗi hạng mục đều có mốc nghiệm thu rõ ràng để chủ đầu tư và khách hàng cùng theo dõi.",
       "Hạ tầng được ưu tiên triển khai trước gồm đường nội khu, hệ thống cấp thoát nước, điện chiếu sáng và cây xanh cảnh quan. Cách làm này giúp cư dân sớm có môi trường sống hoàn chỉnh ngay khi nhận nhà.",
-      "Sau Giai đoạn 1, Giai đoạn 2 (2029–2030) sẽ hoàn thiện 568 căn nhà ở xã hội còn lại cùng 15 căn thấp tầng, khép kín quy hoạch của Khu Đồng Mái. Công ty sẽ thường xuyên cập nhật tiến độ trên website và các kênh liên hệ chính thức.",
+      "Giai đoạn 2 triển khai khoảng 339 căn nhà ở xã hội (tòa 3), 15 căn nhà ở thương mại thấp tầng (4 tầng) và trường mầm non MN-01 (3 tầng, 186 cháu), khởi công khi Bộ Công an có nhu cầu cụ thể và hoàn thành sau 02 năm. Công ty sẽ cập nhật tiến độ trên website và các kênh liên hệ chính thức.",
     ],
-    points: ["665 căn nhà ở xã hội trong Giai đoạn 1", "Hạ tầng kỹ thuật đồng bộ, cây xanh và tiện ích nội khu", "Cam kết tiến độ và chất lượng công trình"],
+    points: ["≈700 căn NOXH và 179 căn TM trong Giai đoạn 1", "Bồi thường GPMB và HTKT toàn khu", "Cam kết tiến độ và chất lượng công trình"],
   },
   {
     img: P.n2, tag: "Pháp lý", read: "4 phút",
@@ -423,7 +424,7 @@ export default function Home() {
             <div className="head">
               <p className="eyebrow light">Tiến độ</p>
               <h2>Tiến độ dự án</h2>
-              <p>Lộ trình 2026 – 2030</p>
+              <p>Giai đoạn 1: Q3/2026 – Q4/2028 · Giai đoạn 2: theo nhu cầu Bộ Công an</p>
             </div>
             <div className="timeline" id="tl">
               <div className="tl-line"><i id="tlFill" /></div>
