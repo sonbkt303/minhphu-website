@@ -370,8 +370,8 @@ export default function Home() {
             <ProjectCards projects={projects} />
             <div className="overview">
               <div className="ov-plan reveal">
-                <img src={P.plan} alt="Quy hoạch chi tiết tỷ lệ 1/500 Khu Đồng Mái" loading="lazy" />
-                <span>Quy hoạch chi tiết tỷ lệ 1/500</span>
+                <img src={P.plan} alt="Quy hoạch chi tiết Khu Đồng Mái" loading="lazy" />
+                <span>Quy hoạch chi tiết</span>
               </div>
               <div className="ov-info reveal">
                 <h3>Quy mô &amp; cơ cấu sử dụng đất</h3>
