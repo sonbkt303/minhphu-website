@@ -20,7 +20,7 @@ Xem thư mục `logo-options/` (7 phong cách, kèm giải thích trong `logo-op
 
 ## Tệp liên quan
 - **Nguồn chính thức:** `logo.jpg` · `Logo_Minh_Phu_Hung_Chinh_Thuc_Print_CMYK.pdf` (xuất web bằng PyMuPDF)
-- **Web:** `minh-phu-hung-mark.png` (hero/footer tối, chỉ biểu tượng, nền trong suốt), `minh-phu-hung-hd.png` (navbar nền sáng, có chữ), `minh-phu-hung.png` (OG/social)
+- **Web:** `minh-phu-hung-mark.png` (hero/footer tối, chỉ biểu tượng, nền trong suốt), `minh-phu-hung-ngang.png` (navbar nền sáng, emblem + chữ ngang), `minh-phu-hung-hd.png` / `minh-phu-hung.png` (bản dọc đủ, OG/social)
 - Component: `components/Logo.tsx` — `tone="light"` → mark; `tone="dark"` → bản đủ chữ
 - Favicon: `app/icon.png` / `apple-icon.png` — biểu tượng MPH, nền trong suốt 
 

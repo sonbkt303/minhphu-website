@@ -1,24 +1,24 @@
-import Image from "next/image";
-
-/** Raster từ PDF in chính thức (~300 DPI), nền trong suốt. */
-const MARK = { src: "/logo/minh-phu-hung-mark.png", w: 2150, h: 1364 };
-const FULL = { src: "/logo/minh-phu-hung-hd.png", w: 2288, h: 2200 };
+/** Biểu tượng (không kèm chữ) — cắt từ PDF chính thức, nền trong suốt. */
+const EMBLEM = { src: "/logo/minh-phu-hung-emblem.png", w: 1756, h: 1045 };
 
 export default function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
-  const { src, w, h } = tone === "light" ? MARK : FULL;
+  const alt = tone === "light" ? "Minh Phú Hưng – Đầu tư bất động sản" : "";
 
   return (
-    <span className={`brand ${tone}`}>
-      <Image
-        className="brand-img"
-        src={src}
-        alt="Minh Phú Hưng – Đầu tư bất động sản"
-        width={w}
-        height={h}
-        sizes="(max-width: 820px) 140px, 220px"
-        quality={100}
-        priority
-      />
+    <span className={`brand ${tone} brand-row`}>
+      <span className="brand-icon-wrap">
+        {/* img thuần — tránh wrapper Next/Image giới hạn khung gây cắt logo */}
+        <img
+          className="brand-icon"
+          src={EMBLEM.src}
+          width={EMBLEM.w}
+          height={EMBLEM.h}
+          alt={alt}
+          decoding="async"
+          fetchPriority="high"
+        />
+      </span>
+      <span className="brand-word">Minh Phú Hưng</span>
     </span>
   );
 }
