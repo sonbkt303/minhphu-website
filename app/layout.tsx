@@ -41,10 +41,10 @@ const jsonLd = {
   name: "Công ty TNHH Đầu tư BĐS Minh Phú Hưng",
   url: SITE,
   telephone: "+84988056886",
-  email: "congtyminhphuhung@gmail.com",
+  email: "bdsminhphuhung@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "TDP Khai Quang",
+    streetAddress: "Số 29, Phố Ấp Hạ",
     addressLocality: "Phường Vĩnh Phúc",
     addressRegion: "Phú Thọ",
     addressCountry: "VN",

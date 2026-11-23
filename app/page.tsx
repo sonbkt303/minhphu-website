@@ -11,10 +11,8 @@ import ProjectCards, { type Project } from "@/components/ProjectCards";
 
 const profile: [string, React.ReactNode][] = [
   ["Mã số ĐKDN", "2500783313"],
-  ["Chủ tịch HĐTV", "Vũ Văn Minh"],
-  ["Tổng giám đốc", "Lê Đức Thọ"],
-  ["Địa chỉ", "TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ"],
-  ["Email", <a key="e" href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a>],
+  ["Địa chỉ", "Số 29, Phố Ấp Hạ, Phường Vĩnh Phúc, Tỉnh Phú Thọ, Việt Nam"],
+  ["Email", <a key="e" href="mailto:bdsminhphuhung@gmail.com">bdsminhphuhung@gmail.com</a>],
   ["Điện thoại", <a key="t" href="tel:0988056886">0988056886</a>],
 ];
 
@@ -461,8 +459,8 @@ export default function Home() {
               <p className="muted">Đăng ký nhận thông tin dự án</p>
               <ul className="contact-list">
                 <li><Icon name="phone" size={20} /><a href="tel:0988056886">0988056886</a></li>
-                <li><Icon name="mail" size={20} /><a href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a></li>
-                <li><Icon name="pin" size={20} />TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ</li>
+                <li><Icon name="mail" size={20} /><a href="mailto:bdsminhphuhung@gmail.com">bdsminhphuhung@gmail.com</a></li>
+                <li><Icon name="pin" size={20} />Số 29, Phố Ấp Hạ, Phường Vĩnh Phúc, Tỉnh Phú Thọ, Việt Nam</li>
               </ul>
               <ContactForm />
             </div>
@@ -489,7 +487,7 @@ export default function Home() {
           <LegalLinks />
           <div>
             <h4>Liên hệ</h4>
-            <p className="fc">TDP Khai Quang, P. Vĩnh Phúc, Phú Thọ<br />Hotline: <a href="tel:0988056886">0988056886</a><br />Email: <a href="mailto:congtyminhphuhung@gmail.com">congtyminhphuhung@gmail.com</a></p>
+            <p className="fc">Số 29, Phố Ấp Hạ, Phường Vĩnh Phúc, Tỉnh Phú Thọ, Việt Nam<br />Hotline: <a href="tel:0988056886">0988056886</a><br />Email: <a href="mailto:bdsminhphuhung@gmail.com">bdsminhphuhung@gmail.com</a></p>
           </div>
         </div>
         <div className="container copy">

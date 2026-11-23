@@ -51,7 +51,7 @@ function parseBody(raw: unknown): { ok: true; lead: ContactLead } | { ok: false;
 
 function mailConfig() {
   const apiKey = process.env.RESEND_API_KEY?.trim() ?? "";
-  const to = process.env.CONTACT_TO_EMAIL?.trim() ?? "congtyminhphuhung@gmail.com";
+  const to = process.env.CONTACT_TO_EMAIL?.trim() ?? "bdsminhphuhung@gmail.com";
   const fromEmail = process.env.CONTACT_FROM_EMAIL?.trim() ?? "";
   const fromName = process.env.CONTACT_FROM_NAME?.trim() || "Minh Phú Hưng Land";
   const from = fromEmail ? `${fromName} <${fromEmail}>` : "";
