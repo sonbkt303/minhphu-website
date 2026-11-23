@@ -7,7 +7,7 @@ type Item = {
   t: string;
   d: string;
   lead: string;
-  facts: [string, string][];
+  facts: [string, string | string[]][];
   points: string[];
   proof: string;
 };
@@ -21,12 +21,19 @@ const items: Item[] = [
     facts: [
       ["Quyết định phê duyệt", "6061/QĐ-BCA-H02"],
       ["Đăng ký kinh doanh", "2500783313"],
-      ["Đối tượng", "Cán bộ, chiến sĩ CAND"],
+      [
+        "Đối tượng",
+        [
+          "NOXH: Lực lượng vũ trang Công an Nhân dân",
+          "NOTM: đối tượng khác",
+        ],
+      ],
     ],
     points: [
       "Quyết định phê duyệt dự án của Bộ Công an số 6061/QĐ-BCA-H02.",
       "Doanh nghiệp đăng ký kinh doanh hợp pháp, tra cứu công khai trên Cổng thông tin quốc gia.",
       "Quy hoạch 1/500 và các thủ tục đầu tư được hoàn tất theo từng giai đoạn.",
+      "NOXH dành cho lực lượng vũ trang Công an nhân dân; NOTM dành cho đối tượng khác theo quy định.",
       "Hợp đồng, quy trình đăng ký và danh sách đối tượng được công khai minh bạch.",
     ],
     proof: "Khách hàng có thể yêu cầu cung cấp bản sao hồ sơ pháp lý tại văn phòng công ty.",
@@ -140,7 +147,18 @@ export default function WhyCards() {
               <p>{cur.lead}</p>
               <div className="why-facts">
                 {cur.facts.map(([k, v]) => (
-                  <div key={k}><small>{k}</small><b>{v}</b></div>
+                  <div key={k}>
+                    <small>{k}</small>
+                    {Array.isArray(v) ? (
+                      <div className="why-facts-stack">
+                        {v.map((line) => (
+                          <b key={line}>{line}</b>
+                        ))}
+                      </div>
+                    ) : (
+                      <b>{v}</b>
+                    )}
+                  </div>
                 ))}
               </div>
               <h4>Cam kết cụ thể</h4>
