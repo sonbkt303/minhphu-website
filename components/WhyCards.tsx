@@ -44,14 +44,14 @@ const items: Item[] = [
     d: "Tổng mức đầu tư ~2.262 tỷ đồng, 2 giai đoạn",
     lead: "Dự án được chuẩn bị bài bản về quy mô, lộ trình và quản trị để triển khai đúng cam kết, không đứt gãy tiến độ.",
     facts: [
-      ["Tổng mức đầu tư", "~2.262 tỷ đồng"],
+      ["Tổng mức đầu tư", "~2.262,3 tỷ đồng"],
       ["Quy mô", "1.233 căn hộ"],
-      ["Triển khai", "2 giai đoạn"],
+      ["Phân kỳ", "2 giai đoạn"],
     ],
     points: [
-      "Tổng mức đầu tư khoảng 2.262 tỷ đồng cho toàn bộ dự án.",
-      "Giai đoạn 1 (Q3/2026 – Q4/2028): bồi thường GPMB, HTKT toàn khu, ≈700 căn NOXH (tòa 1, 2) và 179 căn TM cao tầng.",
-      "Giai đoạn 2: ≈339 căn NOXH (tòa 3), 15 căn thấp tầng, trường MN-01 — khởi công theo nhu cầu Bộ Công an, hoàn thành sau 2 năm.",
+      "Tổng mức đầu tư khoảng 2.262,3 tỷ đồng cho toàn bộ dự án (~50.000 m²).",
+      "Giai đoạn 1 (Q3/2026 – Q4/2028): bồi thường, GPMB; HTKT toàn khu · ≈700 căn NOXH (tòa 1, 2; 20 tầng nổi, 1 hầm) · 179 căn TM cao tầng (15 tầng nổi, 1 hầm, đế TM 2 tầng).",
+      "Giai đoạn 2: ≈339 căn NOXH (tòa 3) · 15 căn thấp tầng (4 tầng) · Trường MN-01 (3 tầng, 186 cháu). Khởi công khi Bộ Công an có nhu cầu cụ thể; hoàn thành sau 02 năm.",
       "Tiến độ và chất lượng được kiểm soát theo từng mốc nghiệm thu.",
     ],
     proof: "Lộ trình rõ ràng giúp khách hàng yên tâm về tiến độ bàn giao và quyền lợi.",
@@ -85,6 +85,7 @@ const items: Item[] = [
       ["Cập nhật", "Định kỳ hằng quý"],
     ],
     points: [
+      "Giai đoạn 1 hoàn thành theo mốc Q4/2028; Giai đoạn 2 triển khai theo nhu cầu Bộ Công an.",
       "Lộ trình thi công chia theo từng giai đoạn với mốc bàn giao cụ thể.",
       "Nhà thầu uy tín, giám sát chất lượng độc lập tại từng hạng mục.",
       "Cập nhật hình ảnh, tiến độ thực tế định kỳ cho khách hàng.",
