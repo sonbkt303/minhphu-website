@@ -148,6 +148,12 @@ h3{font-size:1.55rem;margin-bottom:.5rem}
 .tl-item::before{content:"";position:absolute;left:-2.9rem;top:.5rem;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(184,146,58,.25)}
 .tl-item em{font:600 1.5rem var(--display);color:var(--gold-light);font-style:normal}
 .tl-item p{opacity:.8}
+.timeline-section{background:linear-gradient(180deg,var(--ivory) 0%,#fff 55%,var(--soft) 100%)}
+.timeline-section .head h2{color:var(--navy)}
+.timeline-section .tl-line{background:rgba(11,31,63,.12)}
+.timeline-section .tl-item em{color:var(--gold)}
+.timeline-section .tl-item h3{color:var(--navy)}
+.timeline-section .tl-item p{color:var(--muted);opacity:1}
 
 /* CTA */
 .cta{background:center/cover fixed;color:#fff;text-align:center;padding:8rem 0}

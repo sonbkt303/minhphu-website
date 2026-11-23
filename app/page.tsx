@@ -32,7 +32,6 @@ const P = {
   g5: D("cong-vien-thap"),
   g6: D("duong-noi-khu"),
   g7: D("cong-vien-nang"),
-  tl: D("vi-tri-tong-the"),
   cta: D("toan-canh-dem"),
   n1: D("phoi-canh-ban-ngay"),
   n2: D("vi-tri-tong-the"),
@@ -116,9 +115,21 @@ const scaleFacts: [string, string][] = [
 ];
 
 const milestones = [
-  ["Q3/2026 – Q4/2028", "Giai đoạn 1", "Bồi thường, GPMB; HTKT toàn khu · ≈700 căn NOXH (tòa 1, 2; 20 tầng nổi, 1 hầm) · 179 căn TM cao tầng (15 tầng nổi, 1 hầm, đế TM 2 tầng)"],
-  ["Q4/2028", "Hoàn thành Giai đoạn 1", "Bàn giao các hạng mục Giai đoạn 1 theo quy hoạch"],
-  ["Theo nhu cầu BCA", "Giai đoạn 2", "≈339 căn NOXH (tòa 3) · 15 căn thấp tầng (4 tầng) · Trường MN-01 (3 tầng, 186 cháu). Khởi công khi Bộ Công an có nhu cầu cụ thể; hoàn thành sau 02 năm"],
+  [
+    "Q3/2026",
+    "Khởi công Giai đoạn 1",
+    "Bồi thường, GPMB; hoàn thiện HTKT toàn khu; thi công ≈700 căn NOXH (tòa 1, 2 · 20 tầng nổi, 1 hầm) và 179 căn TM cao tầng (15 tầng nổi, 1 hầm, đế TM 2 tầng).",
+  ],
+  [
+    "Q4/2028",
+    "Hoàn thành Giai đoạn 1",
+    "Bàn giao căn hộ NOXH, TM cao tầng và các hạng mục tiện ích Giai đoạn 1 theo quy hoạch.",
+  ],
+  [
+    "Theo nhu cầu BCA",
+    "Giai đoạn 2",
+    "Triển khai ≈339 căn NOXH (tòa 3), 15 căn thấp tầng (4 tầng) và Trường MN-01 (3 tầng, 186 cháu). Khởi công khi Bộ Công an có nhu cầu cụ thể; hoàn thành sau 02 năm.",
+  ],
 ];
 
 const news: Article[] = [
@@ -419,12 +430,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section navy bgimg" id="timeline" style={{ backgroundImage: `linear-gradient(rgba(12,30,53,.9),rgba(12,30,53,.94)),url(${P.tl})` }}>
+        <section className="section soft timeline-section" id="timeline">
           <div className="container">
             <div className="head">
-              <p className="eyebrow light">Tiến độ</p>
+              <p className="eyebrow">Tiến độ</p>
               <h2>Tiến độ dự án</h2>
-              <p>Giai đoạn 1: Q3/2026 – Q4/2028 · Giai đoạn 2: theo nhu cầu Bộ Công an</p>
+              <p className="muted">Cập nhật đến 11/2026 · Giai đoạn 1: Q3/2026 – Q4/2028 · Giai đoạn 2: theo nhu cầu Bộ Công an</p>
             </div>
             <div className="timeline" id="tl">
               <div className="tl-line"><i id="tlFill" /></div>
