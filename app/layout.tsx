@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     title: "Minh Phú Hưng Land – Kiến tạo không gian sống chất lượng cao",
     description: "Dự án nhà ở lực lượng vũ trang Công an nhân dân tại Khu Đồng Mái, Phú Thọ.",
-    images: [HERO_IMG],
+    images: [{ url: "/logo/minh-phu-hung.png", width: 1400, height: 933, alt: "Minh Phú Hưng" }, HERO_IMG],
   },
 };
 

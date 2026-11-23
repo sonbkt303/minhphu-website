@@ -19,7 +19,9 @@ Logo là **huy hiệu tròn cổ điển**, nền xanh navy, viền vàng đồn
 Xem thư mục `logo-options/` (7 phong cách, kèm giải thích trong `logo-options/README.md`).
 
 ## Tệp liên quan
-- Component: `components/Logo.tsx` (dùng ở thanh điều hướng và footer)
-- Favicon: `app/icon.png` — emblem trái của `public/logo/ngang-navy.png` (chữ navy đậm + viền vàng, nền trong suốt; dễ đọc ở kích thước 16–32px)
+- **Nguồn chính thức:** `logo.jpg` · `Logo_Minh_Phu_Hung_Chinh_Thuc_Print_CMYK.pdf` (xuất web bằng PyMuPDF)
+- **Web:** `minh-phu-hung-mark.png` (hero/footer tối, chỉ biểu tượng, nền trong suốt), `minh-phu-hung-hd.png` (navbar nền sáng, có chữ), `minh-phu-hung.png` (OG/social)
+- Component: `components/Logo.tsx` — `tone="light"` → mark; `tone="dark"` → bản đủ chữ
+- Favicon: `app/icon.png` / `apple-icon.png` — biểu tượng MPH, nền trong suốt 
 
 Trên website, mặt trời có hiệu ứng "thở" nhẹ và các tia sáng xoay chậm (tắt khi người dùng chọn giảm chuyển động).
