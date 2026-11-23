@@ -483,7 +483,7 @@ export default function Home() {
                 className="map"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Ph%C6%B0%E1%BB%9Dng+V%C4%A9nh+Ph%C3%BAc,+Ph%C3%BA+Th%E1%BB%8D&output=embed"
+                src="https://www.google.com/maps?q=21.328039,105.594189&hl=vi&z=16&output=embed"
               />
             </div>
           </div>
